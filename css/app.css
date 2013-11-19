@@ -1,0 +1,104 @@
+body {
+	font-family: 'Karla', sans-serif;
+}
+
+a {
+	color: #0096A7;
+}
+
+ul li {
+	list-style: none;
+}
+
+.header {
+	background-color: #000000;
+	padding-top: 30px;
+	margin-bottom: 20px;
+}
+
+.header h1 {
+	background-image: url('../img/uzem_inverse.png');
+	overflow: hidden;
+	text-indent: -1000px;
+	background-size: 170px 170px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 200px;
+	display: block;
+}
+
+.intro {
+	border-bottom: 4px solid #000000;
+	padding-bottom: 15px;
+}
+
+.face h2 {
+	background-image: url('../img/gabor-hoffer.png');
+	overflow: hidden;
+	text-indent: -1000px;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 205px;
+	padding-left: 0;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+}
+
+.intro h3, .feed h3 {
+	font-size: 150%;
+	font-family: 'Karla', sans-serif;
+	margin-left: -3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.face h4 {
+	font-size: 170%;
+	font-family: 'Karla', sans-serif;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin-top: -58px;
+	text-shadow: 0px 0px 5px #000000;
+}
+
+.face p {
+	text-align: center;
+}
+
+.intro p {
+	font-size: 110%;
+}
+
+.feed {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer {
+	background-color: #0096A7;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer h5 {
+	font-size: 120%;
+	color: #FFFFFF;
+	font-family: 'Karla', sans-serif;
+	margin-left: -3px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.footer a {
+	color: #222222;
+	text-decoration: underline;
+}
+
+.tweet li {
+	margin-bottom: 20px;
+}
