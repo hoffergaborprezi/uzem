@@ -1,4 +1,4 @@
 uzem
 ====
 
-uzem.hu
+uzem.hu, personal website for Hoffer Gábor
