@@ -102,3 +102,18 @@ ul li {
 .tweet li {
 	margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 499px) {
+
+.face h2 {
+	height: 63vw;
+	margin-right: 15vw;
+	margin-left: 15vw;
+}
+
+.face h4 {
+	margin-top: -18vw;
+	margin-bottom: 15vw;
+}
+
+}
