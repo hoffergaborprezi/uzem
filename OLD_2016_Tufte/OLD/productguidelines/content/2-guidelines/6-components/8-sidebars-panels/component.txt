@@ -1,0 +1,72 @@
+Title: Sidebars & Panels
+
+----
+
+Short: [MISSING CONCEPT DESCRIPTION]
+
+----
+
+Text: ### Sidebars
+Sidebars in Prezi are used either to display the storyline of the presentation (the 'Path sidebar') or typically to show a high number of items in a grid or list which are required to be browsed ('Browse' sidebars), for example an image browse or a favorites sidebar. Sidebars visually are opened from either side of the window towards the center of the screen (not like a drawer).
+
+
+### Browse Sidebars
+A browse sidebar is typically opened with an animation from the right side of the application window and contains a header and a mixture of content and/or control blocks that contribute to the sidebar's functionality. 
+
+
+#### Sidebar Header
+The header is usually dark and features a centered title that clearly identifies the sidebar and a close button. 
+
+
+#### Sidebar Content
+The content area blocks can be:
+A set of controls (e.g. a search field with a submit button)
+One, or multiple array(s) of similar items (e.g. the result of an image search query arranged in groups with headings)
+Information (e.g. when there's no result for an image search)
+
+There can only be one browse sidebar open at a time, i.e. when a new one is triggered the other one closes. To see more details about how to switch between the sidebars please check the Motion chapter.
+
+
+### Sidebar Container Types
+#### Grid
+Grid container features content elements with exactly the same size. We use a grid container typically when the content has the same aspect ratio or the user is familiar with the content and it's not a problem to crop the element to the same size. 
+
+#### Board
+A board container features content elements with different sizes or ratios. We use it when it's important to show content in full size and with original ratio, typically for images.
+
+#### Folders
+We use folder container type when the content is categorized and the categories help finding the needed content. This container features an inner navigation within the panel.
+
+#### Mixed
+The mixed container is typically used when more than one type of content has to be displayed in groups. A typical use case is the inspiration panel. This container features an inner navigation within the panel.
+
+
+### Popovers
+A popover is a contextual popup dialog that is visually attached to a UI control (origin). They are like a mixture of simple dropdown lists and the sidebars: popovers usually feature either the same content types (grids, lists of objects) as the sidebar or any kind of rich content. All popovers are modal, i.e. a click triggered outside the popover hides it. The modality of popovers also implies that they in most of the cases don't feature submit and/or dismiss (cancel) buttons. 
+
+There can only be one popover open at a time and also opening a popover from another one should be avoided.
+
+Popover example
+
+
+### Sidebar and Popover Sizes
+Sidebars and popovers can be used in the following sizes:
+    Small - 168px
+    Standard - 318px
+    Wide - 438px
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

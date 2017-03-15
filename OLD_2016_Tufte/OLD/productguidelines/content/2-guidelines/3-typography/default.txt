@@ -1,0 +1,32 @@
+Title: Typography
+
+----
+
+Short: The main typeface of Prezi products is Noto Sans that is "designed with the goal of visual harmony across multiple languages". Combined with Raleway - as an outlook to a signiture element of our brand - we achieve a readable, professional yet inviting typographic system.
+
+----
+
+Text: Standard font sizes work best when combined with a leading value that is derived from 3px therefore we use this value for type baseline.
+Download Noto Sans + Raleway.
+
+### Extension
+The most commonly used font sizes on the Prezi UI are 12, 13, 14, 21, 28 and 40. If you need to extend this, use the standard typographic sizes (6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 21, 24, 36, 48, 60, 72).
+
+### Fonts in Native Prezi Apps
+Native prezi applications follow the font guidelines of the given platform.
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

@@ -1,0 +1,51 @@
+Title: Components
+
+----
+
+Short: A dialog box or a popup is a modal window that communicates information and/or prompts the viewer for a response. Dialogs usually have a title which shortly describes the purpose of the window, a short description which provides more information about the actions and their consequenses, and eventually a row of action buttons. Depending on the usage we differentiate between the following dialog types.
+
+----
+
+Text: ### Information and Alert Dialog
+The simplest form of a dialog box is a window that displays a message and requires an acknoledgement by clicking on (one of the) action button(s). 
+
+Regular dialog window
+
+If an error or a warning occures we use the error/warning style.
+
+Error dialog window
+
+If a decision is needed to be displayed, then we use an important button for the default action. We always use descriptive labels on the action buttons which are typically verbs that enforces the awareness of the action, such as 'Save' and 'Don't save'. We avoid using generic labels like 'Cancel' or 'OK'.
+
+Multi choice dialog window with clean action verbs as button labels
+Don't use generic labels, like 'Cancel' or 'OK'
+
+
+### Rich Content Dialog
+A popup with more complex content that can contain text, images and UI controls is called a rich content dialog. The content of these dialogs are arranged according to the basic layout rules that is used throughout the Prezi UI.
+
+One button rich popup dialog
+
+Rich popup with a primary and secondary button
+
+Rich popup with optional third action button
+
+
+### Dialog Overlay
+For better contrast we use a semi-transparent overlay under the dialog popups.
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

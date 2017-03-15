@@ -1,0 +1,67 @@
+Title: Lists
+
+----
+
+Short: A list is an array of options displayed one below the other. The list is opened by a trigger action of a UI element that can be a button (trigger is clicking on it) or a text input field (start typing to see the list).
+
+----
+
+Text: After choosing a list item (by clicking on one of them) the list disappears and the wired action is triggered. If the trigger UI element is a dropdown button we show the result (the selected option) on this element — the icon and the text changes after selecting.
+
+Example for lists
+
+
+### Sticky lists
+Sticky lists are visually attached to the origin UI element of the list, usually coming from a dropdown or an input field. Usually we use this when the origin UI element has a clear horizontal bottom edge that the list can be attached to.
+
+List example with and without background box
+
+Suggestion list for text input component
+
+
+### List sizes
+We use two sizes for list, a small one and a normal size. For longer lists it's recommended to use the smaller size since we can list more elements.
+
+Normal and small sized lists
+
+
+### Floating lists
+Floating list is very similar to the sticky ones, but it also has an "arrow" pointing to the UI element that triggered it. We use this type when we can't visually attach the list to the origin element.
+The list also must have a padding from the edge of the screen (see the first example on this page).
+
+Floating list
+
+
+### List Content
+List elements are texts with or without icons. Use icons only if every element have one.
+The elements can be also checkable — that means the checked item has a checkmark on its left. We use checkmarks for 
+toggle buttons (can be turned on/off), or
+in the case when we need a visual reinforcement about the selected item. (when showing the selected option on the trigger UI component as the result is not enough)
+
+List elements with icons
+
+Checkable list items with and without icons
+
+Mouseover interaction on list items
+
+
+### Mixing Various Content Types in the Same List
+In some cases we may need a "mixed" list with multiple type of elements. In these cases we use a divider line to separates the different option types.
+
+Mixed list example
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

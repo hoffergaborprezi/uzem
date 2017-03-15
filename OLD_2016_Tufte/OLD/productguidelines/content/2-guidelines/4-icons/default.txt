@@ -1,0 +1,37 @@
+Title: Icons
+
+----
+
+Short: The Entypo Icon Library is fully aligned with our design philosophy: the icons are bold and reduced to the minimum. With their subtle roundness and monochromatic style, they perfectly complement both our interface elements and fonts.
+
+----
+
+Text: ### Icon Sizes
+Icon sizes can vary on the usage but in any case, the UI icon should fit in its environment (e.g. the topmenu icon sizes should be optically the same) and it's readable.
+
+### Extending & Mixing the UI Icon Library
+When needed the library can be modified or extended with our own icons. In this case make sure that the icon is unique, fits well with the whole library, it contains the appropriate level of visual details and it's readable even in small size. As further extension guideance consider the following:
+Use rounded corners. (For a 16x16px icon size you can safely go with 1px radius)
+UI icons are monochrome
+Use thick lines (For 16x16px icon min. 2-3px thickness)
+Build your icons from basic geometric shapes
+Use negative space
+
+### Icons and Prezi Brand
+Refer to the Brand Guideline if you need to use icons as illustrations on the UI.
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

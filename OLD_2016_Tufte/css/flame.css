@@ -1,0 +1,53 @@
+header {
+	background: url("../img/hoffer.JPG");
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100vh;
+}
+
+header h1 {
+	margin-top: 65vh;
+}
+
+header h1, header subtitle {
+	width: 87.5%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 12.5%;
+	color: white;
+}
+
+header subtitle a {
+	color: white;
+}
+
+header credit {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 12px;
+}
+
+article {
+	margin-top: 100vh;
+}
+
+ref {
+	width: 25%;
+	display: inline-block;
+	padding-top: 1.3rem;
+	padding-right: 1.3rem;
+	vertical-align: top;
+}
+
+ref img {
+	max-width: 100%;
+}

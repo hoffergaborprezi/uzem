@@ -1,0 +1,92 @@
+Title: Layout
+
+----
+
+Short: The ultimate focus in our products is on content. The layouts we design are built around, they emphasize and never suppress content.
+
+----
+
+Text: ### Layout Around Content
+As a rule of thumb, content should be always the central element of what we design. Avoid overwhelming the screen with UI and when showing new interface elements (sidebars, popovers, lists) minimize the covering of content. 
+
+GOOD EXAMPLE: left sidebar
+BAD EXAMPLE: cockpit
+
+GOOD EXAMPLE: new share dialog
+BAD EXAMPLE: OLD SHARE DIALOG
+
+To make the product more approachable and decrease cognitive load, let people interact with content rather than interface. Use content as active elements and for conveying information instead of buttons and labels. Think about the key message or function and ways to involve content in your design.
+
+GOOD EXAMPLE: avatars
+BAD EXAMPLE: number of people in prezi
+
+### Depth
+We leverage depth in prezi applications to make the interface more approachable and familiar. Also the z-position of the components on specific layers helps to emphasize content and communicate hierarchy. We use subtle shadows and meaningful animation to indicate depth. 
+
+
+
+Design Implementation of the Online Editor
+
+
+### Controls
+Controls either reside on surfaces (panels, sidebars, bars etc.) or directly attached to objects on the canvas (a common example for this is the resize handlers for objects in prezi).
+
+(image: canvas-controls.png)
+
+
+### Containers
+Containers are well defined surfaces of the interface that can hold controls or information that serve the same function. They are placed on top of the background and the canvas controls. As containers are visually isolated building blocks, they eventually make up further layering in the interface hierarchy within the interface components layer. 
+
+### Blocks and Elements
+A container holds logical blocks for a specific function and the blocks typically contain the lowest level interface elements. For example an image sidebar (container) features a search block (with one search field element) and a results block (with multiple image elements). 
+(image: image-sidebar-component.png)
+(image: card-components.png)
+
+
+### Margins and Paddings 
+Every element and block in a container should sit on a 6px baseline grid relative to the container and preferably the containers should also sit on the overall 6px grid. 
+(image: grid-blocks.png)
+(image: grid-blocks-with-elements.png)
+
+
+The elements in the same block usually have 12px spacing between each other while the blocks in a component are usually separated by a 24px spacing.
+ (image: image-sidebar-spacings.png)
+
+
+### Attached Containers
+Attached containers are typically displayed relative to either the screen sides or to another container or UI element. These are: sidebars, lists and popovers. Attached containers should be designed with a fixed width (and in most cases with a flexible height). We define 3 different sizes for attached containers from which the designer can choose depending on the purpose and the use case:
+
+    Small - 168px
+    Standard - 318px
+    Wide - 438px
+
+In most of the cases the side margin for attached containers is 24px.
+(image: side-spacings.png)
+
+### Standalone Containers
+Standalone containers are not tightly attached to any other container or UI element, for example a dialog window, a popup or a card. The width of the standalone containers  should be between 384px and 1200px and it should be the multiplication of 48px (i.e. 384, 432 ... 1200). The side margin is 48px.
+(image: standalone-containers.png)
+
+A content of a standalone containers can be very diverse and more complex than the one of an attached container. When constructing the blocks for the standalone container, consider either using the full width for the content or devide it by either half-half, or by the golden ratio.
+(image: golden-ratio.png)
+
+
+### Full Screen Containers
+A full screen container covers all what's displayed on the screen and puts the focus on the content in the container. A good example is the play page or an image lightbox. In this case the layout should follow the basic brand guideline layout rules (16 division, half/half, golden ratio etc.).
+(image: landing.png)
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

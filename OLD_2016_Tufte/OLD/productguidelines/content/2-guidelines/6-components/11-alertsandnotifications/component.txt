@@ -1,0 +1,56 @@
+Title: Alerts & Notifications
+
+----
+
+Short: [KEY CONCEPT MISSING]
+
+----
+
+Text: ### Ribbons
+
+A Ribbon shows general information or hint about the whole page's current status or update. It always appears with a slide in animation to grab the attention, and pushes down the whole interface. 
+
+A Ribbon always contains 
+a close button 
+or a trigger button, which also can make the ribbon disappear
+or both. 
+It should not contain more than two buttons and the information text should be short and straightforward.
+
+#### FYI Ribbon
+We show hints about updates, recommendations about unused or new features in a neutral, dark background FYI Ribbon.
+
+#### Error Ribbon
+Notifications about unexpected internal & external technical issues should appear in an Error Ribbon (e.g. from Prezi.com side or caused by bad internet connection).
+
+#### Warning Ribbon
+The Warning Ribbon contains the consequences of the modification or changes you made or tend to make, which can optionally revokable. Always mention the concrete effects of changes in the description text.
+
+
+### Tooltips & Notifications
+Tooltips and Notifications are contextual hints or status information, strictly connected to one UI elements.
+
+#### Tooltip
+A tooltip comes up only on hover, gives an explanation to UI controls. Use it when a control do not have any text component to help understand the meaning of that. It should not stay there after the next click.
+
+#### Notification
+A notification is shown automatically, it gives the status information of the connected action. It can be clickable, but do not use button inside. Try to keep the copy short, one sentence in one line text.
+
+
+### Smoke messages
+Smoke messages are informational non-contextual instant feedback after user interaction. It disappears with a short delay after the triggered interaction.
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

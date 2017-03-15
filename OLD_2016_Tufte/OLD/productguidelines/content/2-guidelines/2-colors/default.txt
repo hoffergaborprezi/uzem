@@ -1,0 +1,46 @@
+Title: Colors
+
+----
+
+Short: Prezi product colors are bright, bold and joyful. We use white as a base interface background to maximize contrast, one primary color to emphasize key functionalities, and variations of gray to differentiate UI layers.
+
+----
+
+Text: The UI Palette is derived from a certain basic set of colours: the Prezi Blue, the Arctic Fresh and the Black Steel™. In most of the cases we add or subtract brightness to these colours or change the alpha to get the full palette.
+
+
+### Primary Colors
+Use the primary colours for reappearing elements of the UI, as well as the most important, emphasised element on the page. (e.g. Submit). You can use it in combination with other techniques to empower visibility and focus, but use it wisely and consistently.
+
+The more subtle secondary colours as complementary to give more focus on the primary function or to provide a non-obstrusive alternative option for cases when the UI can stay in the background but should be clearly visible. Use it when absolute focus is not necessary (welcome, profile, etc.) or contrast and focus the primary function.
+
+
+### Text Colors
+Use the primary text colour everywhere possible (#152235) and consider lighter options wherever necessary. In general, the lighter you use, the less important you write with it is. 
+
+On dark background work your way down from 100% alpha #FFFFFF to 80% (less important) or even 50% (disabled).
+
+Text Colors
+
+Use them on coloured background for mouseover. 
+On dark background use 15% white, on light background 15% Black Steel.
+
+
+### Accent, Validation and Shadow Colors
+Accent colours can be used for hard actions that has a considerable effect on what is going to happen, for example creation or deletion. Use only one accent colour on a page and use it sparingly, it gives even more attention than the primary colour.
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

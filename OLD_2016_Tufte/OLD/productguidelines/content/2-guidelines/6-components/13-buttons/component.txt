@@ -1,0 +1,49 @@
+Title: Buttons
+
+----
+
+Short: Buttons on the Prezi UI consist of a visually well-defined clickable graphical area and a text or an icon that clearly communicates the action which will be taken when pressed. If possible try to use buttons with either text or icon only, don't use an icon for making a button more important rather design the system that the function is discoverable enough. If you use icon only buttons, make sure that it has a proper tooltip. Also avoid using more than 3 words on a button.
+
+----
+
+Text: Standard (non-overlay) buttons are always placed above a container UI element (e.g. panel, sidebar etc.), they never float. 
+
+#### They all come in 3 sizes:
+Regular (36px) - used most commonly on the UI
+Small (24px) - used rarely on panels with condensed space or less importance
+large (48) - used mostly on popup dialogs, never on sidebars or popover panels
+
+#### You can use the following labels on buttons:
+Text only
+Icon only
+Text and icon
+
+### Button Types
+Regular, Important and Secondary Buttons
+Regular, important and secondary buttons are the ones most common throughout the Prezi interface. Regular buttons can be used multiple times within the same container. Use only one important button for a screen (for example, the editor should have only one important button, however a popup dialog can have its own one as a primary action). Always consider whether the usage of non-regular button types is concurring with other parts of the product. If you need to emphasize but you don't want to grab the attention from the key function, you can use secondary, or ghost primary/secondary buttons.
+
+#### Warning, Validate and Delete Buttons
+These buttons may be used rarely, typically in warning and error dialogs or for non-reversible actions.
+
+### Button States
+We distinguish the following states of the buttons:
+Up - the default state when there's no interaction between the mouse and the button
+Hover - when the mouse is over the button
+Down - when clicked on the button until the mouse is kept clicked
+Disabled - when interaction with the button will not result in any action
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

@@ -1,0 +1,180 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 14px/1 'Noto Sans';
+	font-weight: 400;
+	color: #152235;
+	line-height: 1.25;
+}
+
+div.top {
+	background: #475262;
+	height: 60px;
+	display: block;
+	overflow: hidden;
+}
+
+div.top nav ul, div.top nav ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.top nav ul li a {
+	background: none;
+	float: left;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	font: 13px/1 'Raleway';
+	font-weight: 600;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+div.top nav ul li a.active {
+	background-color: #2e3a4b;
+}
+
+div.top nav ul li a:hover {
+	background-color: #576983;
+	text-decoration: none;
+}
+
+div.top nav ul li:first-child a {
+	padding-left: 32px;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-position: 12px 12px;
+	background-size: 89px 36px;
+	text-indent: 1000px;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+}
+
+div.content {
+	background-color: #ECEEF1;
+	min-height: 60px;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-webkit-align-content: stretch;
+}
+
+div.content div.text {
+	background: #FFFFFF;
+	-webkit-order: 2;
+	padding-bottom: 3vw;
+	margin-left: 0;
+	margin-right: 0;
+	-webkit-flex-grow: 1;
+}
+
+div.content nav {
+	-webkit-order: 1;
+	width: 20vw;
+	min-width: 200px;
+}
+
+div.footer {
+	background: #475262;
+	height: 60px;
+	clear: both;
+	display: block;
+}
+
+div.content h1 {
+	font: 54px/1 'Raleway';
+	font-weight: 900;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+	display:block;
+	width: 80%;
+	background: #2C86FB;
+	margin-top: 0;
+}
+
+div.content div.text p, div.content div.text h3, div.content div.text h4, div.content div.text pre {
+	padding-left: 4vw;
+	padding-right: 4vw;
+}
+
+div.content nav ul, div.content nav ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.content nav ul {
+	margin-top: 5px;
+}
+
+div.content nav ul li {
+	margin-top: 5px;
+	display: block;
+	clear: both;
+}
+
+div.content nav ul li ul {
+	margin-top: 30px;
+}
+
+div.content nav ul li a {
+	font: 16px/1 'Raleway';
+	font-weight: 600;
+	text-decoration: none;
+	color: #475262;
+	margin-left: 20px;
+	background: none;
+	text-transform: uppercase;
+	padding: 0;
+	margin-top: 20px;
+}
+
+.content img {
+	width: 100%;
+	height: auto;
+}
+
+.content h2 {
+	font: 32px/1 'Raleway';
+	font-weight: 600;
+	line-height: 1.25;
+	margin-top: 0;
+}
+
+.content h3 {
+	font: 24px/1 'Raleway';
+	font-weight: 600;
+	line-height: 1.25;
+	margin-top: 2vw;
+}
+
+.content h2 p {
+	margin-top: 1vw;
+}
+
+.content p {
+	line-height: 1.35;
+}
+
+.content em {
+	display: block;
+	text-align: center;
+}
+

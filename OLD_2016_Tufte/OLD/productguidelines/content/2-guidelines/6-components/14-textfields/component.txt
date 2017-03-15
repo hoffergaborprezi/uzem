@@ -1,0 +1,44 @@
+Title: Textfields
+
+----
+
+Short: Text fields on the Prezi UI are focused on inputting text without compromising this feature.
+
+----
+
+Text: [HUGE MESS HERE]
+
+Use placeholder text to aid the people on filling the fields but avoid using general or imperative terms. Use hints and colours upon or possibly before submit to help recognising the unfilled, missed or mistaken fields.
+Arrange multiple text fields in functional groups that belong together, named by a group name. It is also possible but not necessary for every textfield to have a title.
+
+Usage of textfields with icons or next to a button
+
+
+### Textboxes
+
+Only use multiline textfield inputs, if the length of the content supposed to be >3 words, for example: descriptions, ebed code, message form.
+
+Selected state. If there is space for that,
+the height of the textbox can expand
+with an animation, suggesting the ability to expand it.
+
+Starting typing will expand the box if needed,
+and there is space for that. If the textbox is
+reaching the maximum height, we use the
+native scrollbar for scrolling inside the box.
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

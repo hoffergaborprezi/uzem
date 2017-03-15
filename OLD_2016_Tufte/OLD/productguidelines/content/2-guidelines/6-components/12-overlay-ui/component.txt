@@ -1,0 +1,52 @@
+Title: Overlay UI
+
+----
+
+Short: An Overlay UI is a distinctive, dark style group of interface elements that is used when controls or information are needed to be displayed on top of the original content. The original content is typically a prezi, but it can also be an image (e.g. image caption) or a video (e.g. playback controls) or even a thumbnail.
+
+----
+
+Text: ### Overlay Panels
+An overlay panel consists of a panel and controls or information placed in it. It is used typically when the display of the original content is not altered but remains exactly the same regardless of the overlay UI is displayed or not. The panel is either attached to one side of the window or it is floating. The panel can contain a single button, multiple controls or complex content consisting of ui controls and/or information. 
+
+An overlay panel should contain only controls and information that serve the same featureset. A typical example is a video playback toolbar, where the volume slider, the play button and the tracker are all related to one purpose: to control the playback. Avoid mixing content for different purposes in the same panel.
+
+
+### Fullscreen Overlay UI
+A fullscreen overlay UI is used when the original content serves as a hint and the key focus should be on the functions and information within the overlay UI. As a consequence of this, we can lower the legibility of original content to emphasize the content of the overlay UI (for example by covering everything with the overlay or blurring the original content) when using a fullscreen overlay. A typical use case is the play page, where the key function is to show the prezi title, the possible actions and the original content is shown blurred in the background. 
+
+
+### Visual Design
+As the appearance original content is not predictable the overlay UI should work on any background. We use semi-transparent black for the panel and white for the controls and information.
+
+
+### Controls on Overlay UI
+#### Standard Overlay UI Buttons
+The behaviors, sizing and the arrangement of the overlay UI buttons is similar to the standard buttons'. The main difference is that here we use an outline on the button, instead of filling it.
+
+#### Overlay UI button on a prezi card
+
+#### Circular Overlay UI Buttons
+A special overlay UI button is the circular one. We typically use it for standalone controls (e.g. zoom tools) or in a highly visual environment (e.g. play page). 
+
+Example for circular buttons
+
+
+#### Other Usages
+Notifications, tooltips and smoke messagages are also treated as overlay UI respecting their special behaviors.
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

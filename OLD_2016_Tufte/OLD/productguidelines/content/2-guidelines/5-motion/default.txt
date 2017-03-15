@@ -1,0 +1,65 @@
+Title: Motion
+
+----
+
+Short: Motion is a signature element of Prezi. Just like in prezis we use it with meaning on the interface as well: for making the product more understandable, approachable and delightful.
+
+----
+
+Text: ### Explaining Functions
+Use animations to explain spatial relations & hierarchy, sources and results of elements and their related actions. Animation communicates where the sidebar panel comes from and when closing, it shows where it can be re-opened from. By animating the build up process, we also highlight the important actions.
+
+
+### Driving Focus
+Explain navigation, transitions, and state changes while driving attention to important places and functions. Use animation to concentrate attention to important decisions with a popover (e.g. cancel animates back up, done animates onward down). 
+
+
+### Approachable
+Animation should feel familiar (use physical metaphors and real world examples, real world timing: ~.35 sec), ease the start and end of an animation (small bounces, some randomness and slight delays help to achieve the human touch). For example to pull down a canvas you need to pull a little more and then let it go up a bit.
+
+
+### Delightful
+Create a lively and friendly UI that shows we care about the user (to set a general good mood). Rotate the save icon every now and then to make the user feel comfortable while working
+
+
+### Examples
+Navigation & hierarchy
+whole page
+part of a page
+
+Appear & Build Up
+sidebars
+dropdowns
+overlays/pop-overs
+
+Content related actions
+save objects 
+place objects
+
+State changes
+dropdowns, text fields
+icons, buttons
+hover / tooltips
+
+
+### Delight
+loading animation
+
+
+### Animation guide
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

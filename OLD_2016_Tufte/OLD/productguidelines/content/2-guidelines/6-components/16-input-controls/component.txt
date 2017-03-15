@@ -1,0 +1,47 @@
+Title: Input Controls
+
+----
+
+Short: [KEY CONCEPT MISSING]
+
+----
+
+Text: ### Radio button
+Radio buttons are used to show multiple options from that only one can be selected. Compared to drop down lists radio buttons are good to make all the options visible and accessible.
+
+
+### Checkbox
+Checkbox is very similar to the radio button, but makes it available to select multiple options from a set. Usually checkboxes are used as a list. Try to avoid using one checkbox only, for that case it's better to use a Switch.
+
+
+### Switch
+Switch controls are used to toggle on/off a single setting or property. They have a label next to it that clears the function. Compared to a checkbox list, checkboxes are to select options, switches are to toggle options.
+
+
+### Toggle button
+Toggle button has the same functionality as Switch, their only difference is their visual representation. Toggle buttons must have an icon or a label on it that clears the function.
+
+
+### Button blocks
+Button block is a set of Toggle buttons. The properties that the buttons toggle always must be connected.
+For example: the button block sets text styles by switching bold, italic and underlined on/off.
+
+
+### Segmented buttons
+Segmented buttons have the same functionality as radio buttons, but the visual representation is different. Don't use it as Tabs. Tabs changes Views, Segmented buttons are to set a property.
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

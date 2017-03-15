@@ -1,0 +1,59 @@
+Title: Cards
+
+----
+
+Short: A Card is a UI block that represents a (usually complex) piece of a collection that cannot be displayed as is, or needs to be derived.
+
+----
+
+Text: The main action on a Card is to open the content behind and the Card itself gives the opportunity to attach secondary information and/or functions.
+
+One Card consists of three parts.
+Content (this contains the representation of the content piece behind the card)
+Context (this gives the card a context, places it in a collection, can be a title, description, caption, etc. However, this is optional if the content part is enough)
+Trigger (to be able to have complex interactions, you can attach additional functions and information to a Card, triggered by this part of it - this is also optional.)
+
+The main concept contains three options regarding size and function
+Standard card
+
+Small card
+
+Vertical cards
+
+
+### Content
+It should represent what's "behind" the card, it is a window to the whole content yet to be revealed. It can be any type and any size.
+Should be derived from the content of what the card represents
+Should be in a short, compact, comprehensive form
+Can be the same ratio or can be cropped as long as it helps collection or understanding
+Can have states, statuses, that should be clear on the content area.
+
+
+### Context
+It should represent the connection between this content piece and the collection, also it should also describe and give a hint about what the card is derived from or what happened with it.
+
+
+### Trigger
+It represents the way to trigger/reveal secondary information and actions. Most of the time it is revealing further options, but in especially small Card cases it can also be used as a standalone action, in this case it can even be the same as the primary action as an assurance. 
+
+If absolutely necessary, you can put more than one trigger on a card, but in this case they have to be standalone and not reveal other options.
+
+Example of using the card for representing a prezi in Prezi for Mac native   
+
+And with the trigger actions hidden behind a more button
+
+----
+
+Lastupdated: 
+
+----
+
+Cheatsheet: 
+
+----
+
+Sketchfile: 
+
+----
+
+Tags: 

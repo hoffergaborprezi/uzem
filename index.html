@@ -1,135 +1,212 @@
 <!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-css-vs-css-hacks-answer-neither/ -->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
 
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+  <meta charset="utf-8"/>
 
-  <title>:uzem // Gábor Hoffer // designer @ Prezi.com</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine|Montserrat">
+  <link rel="stylesheet/less" type="text/css" href="css/uzem.less">
+  <link rel="stylesheet" type="text/css" href="css/uzem.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Gábor Hoffer // lead designer @ Prezi.com</title>
   <meta name="description" content="Personal webpage of Gábor Hoffer, designer @ Prezi.com, homebrewer and singer of Dokkerman and the Turkeying Fellaz.">
-  <link rel="author" href="http://www.linkedin.com/pub/gábor-hoffer/52/897/b30">
-  <link rel="publisher" href="http://www.linkedin.com/pub/gábor-hoffer/52/897/b30">
+  <link rel="author" href="https://www.linkedin.com/in/hoffergabor">
+  <link rel="publisher" href="https://www.linkedin.com/in/hoffergabor">
 
   <!-- opengraph metatags -->
-  <meta property="og:title" content=":uzem // Gábor Hoffer // designer @ Prezi.com">
+  <meta property="og:title" content="Gábor Hoffer // designer @ Prezi.com">
   <meta property="og:image" content="/img/gabor.hoffer.png">
   <meta property="og:description" content="Personal webpage of Gábor Hoffer, designer @ Prezi.com, homebrewer and singer of Dokkerman and the Turkeying Fellaz.">
 
   <!-- twitter metatags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content=":uzem // Gábor Hoffer // designer @ Prezi.com">
+  <meta name="twitter:title" content="Gábor Hoffer // designer @ Prezi.com">
   <meta name="twitter:description" content="Personal webpage of Gábor Hoffer, designer @ Prezi.com, homebrewer and singer of Dokkerman and the Turkeying Fellaz.">
   <meta name="twitter:image" content="/img/gabor.hoffer.png">
-  
-  <!-- Google fonts CSS Files (Compressed) -->
-  <link href='http://fonts.googleapis.com/css?family=Karla:400,700,400italic' rel='stylesheet' type='text/css'>
-  
-  <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="css/foundation.min.css">
-  <link rel="stylesheet" href="css/app.css">
 
-  <script src="js/modernizr.foundation.js"></script>
-  
-  <!-- Jquery -->
-  <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+  <!-- LESS - http://lesscss.org/# - processes LESS files into CSS -->
+  <script src="js/less.min.js" type="text/javascript"></script>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <!-- tabletop.js - https://github.com/jsoma/tabletop - loads data from Google Spreadsheets -->
+  <script src="js/tabletop.js" type="text/javascript"></script>
 
 </head>
 <body>
 
-  <div class="header"><div class="row">
-    <h1 class="twelve columns">:uzem</h1>
-  </div></div>
+  <header>
+    <h1>Gábor Hoffer</h1>
+    <h2>Lead Product Designer @ <a href="http://prezi.com/" target="_blank">Prezi.com</a></h2>
+    <h3><a href="https://www.linkedin.com/in/hoffergabor" target="_blank">LinkedIn</a> — <a href="mailto:hoffergabor@gmail.com" target="_blank">hoffergabor@gmail.com</a></h3>
+  </header>
 
-  <div class="row intro">
-    <div class="three columns face">
-      <h2>Gábor Hoffer</h2>
-      <h4>I'm Gábor</h4>
+  <timeline>
+    <div class="line"></div>
+    <div class="yearmarkers">
+      <year>
+        <span>2017...</span>
+        <div class="references">
+          <era class="offset-month-7 length-24 ongoing">(currently) Lead Product Designer @ Prezi.com</era>
+          <reference class="offset-month-12">
+            <div class="refcontent bottom-full">
+              <date>27. JAN</date>
+              <h2>Wisloczky College</h2>
+              <p>All creatives — be they entrepreneurs, writers or artists — know the fear of giving shape to ideas. Once we bring something into the world, it’s forever naked to rejection and criticism by millions of angry eyes.</p>
+            </div>
+          </reference>
+        </div>
+      </year>
+      <year>
+        <span>2016</span>
+        <div class="references">
+          <reference class="offset-month-4">
+            <div class="refcontent bottom-full">
+              <date>OCT-DEC</date>
+              <h2>AIT UID Course</h2>
+              <p>This course enables and encourages students to create user-friendly solutions regardless of their manual creative skills or design experience.</p>
+            </div>
+          </reference>
+            <reference class="offset-month-3">
+              <div class="refcontent top-full">
+                <date>NOV</date>
+                <h2>XLabs UX Course</h2>
+                <p>I held my "Workflows and Tools" session the second time in this course.</p>
+              </div>
+            </reference>
+        </div>
+      </year>
+      <year>
+        <span>2015</span>
+        <div class="references">
+          <era class="offset-month-7 length-8 prezi2">Senior Product Designer @ Prezi.com</era>
+        </div>
+      </year>
+      <year>
+        <span>2014</span>
+        <div class="references">
+          <era class="offset-month-2 length-30 prezi3">Product Designer @ Prezi.com</era>
+          <reference class="offset-month-1">
+            <div class="refcontent top-full">
+              <date>NOV</date>
+              <h2>MobilWeekend 2014</h2>
+              <p>Csapa(t)sd a dizájnt! - with Peter Zimon - Design folyamat és ami mögötte van.</p>
+            </div>
+          </reference>
+          <reference class="offset-month-2">
+            <div class="refcontent bottom-full">
+              <date>NOV</date>
+              <h2>App!Mobile by HWSW</h2>
+              <p>Milyen alapelvek alapján érdemes elkezdeni az új eszközökre való rajzolást, mire érdemes figyelni és egyáltalán merre haladunk?</p>
+            </div>
+          </reference>
+          <reference class="offset-month-4">
+            <div class="refcontent top-full">
+              <date>OCT</date>
+              <h2>UXBudapest Meetup</h2>
+              <p>Miért és mikor érdemes nagyon nagy részletességű és kidolgozottságú prototípust kidolgoznunk, és hogyan készíthetünk el egy ilyet? Válasz ezekre a kérdésekre és live demo a Framer Studio segítségével. "Fake it 'til you make it."</p>
+            </div>
+          </reference>
+          <reference class="offset-month-9">
+            <div class="refcontent bottom-full">
+              <date>APR</date>
+              <h2>QCon Sao Paulo - Keynote</h2>
+              <p>Design Driven Development, Context Driven Experience - Factors that can drive design/development and how to apply them in a multi-device environment.</p>
+            </div>
+          </reference>
+          <reference class="offset-month-11">
+            <div class="refcontent top-full">
+              <date>FEB</date>
+              <h2>World Information Architecture Day</h2>
+              <p>Multi-Device User Experience - Milyen alapelvek alapján érdemes elkezdeni az új eszközökre való rajzolást, mire érdemes figyelni és egyáltalán merre haladunk?</p>
+            </div>
+          </reference>
+        </div>
+      </year>
+      <year>
+        <span>2013</span>
+      </year>
+      <year>
+        <span>2012</span>
+        <div class="references">
+          <era class="offset-month-7 length-72 coandco">Designer @ Co&amp;Co Designcommunication</era>
+        </div>
+      </year>
+      <year>
+        <span>2011</span>
+      </year>
+      <year>
+        <span>2010</span>
+      </year>
+      <year>
+        <span>2009</span>
+      </year>
+      <year>
+        <span>2008</span>
+      </year>
+      <year>
+        <span>2007</span>
+      </year>
+      <year>
+        <span>2006</span>
+        <div class="references">
+            <reference class="offset-month-5">
+              <div class="refcontent bottom-full">
+                <date>AUGUST</date>
+                <h2>Moved to Budapest</h2>
+                <p>Shortly after starting to work for Co&amp;Co.</p>
+              </div>
+            </reference>
+            <reference class="offset-month-7">
+              <div class="refcontent top-full">
+                <date>MAY</date>
+                <h2>Got in to MOME</h2>
+                <p>For Industrial Design. – Didn't start at that point, it was too damn expensive...</p>
+              </div>
+            </reference>
+            <reference class="offset-month-10">
+              <div class="refcontent bottom-full">
+                <date>MARCH</date>
+                <h2>Diploma at PTE-PMMK</h2>
+                <p>I finished my studies as an IT Technician and Teacher at Pécs</p>
+              </div>
+            </reference>
+        </div>
+      </year>
+      <year>
+        <span>2005</span>
+      </year>
     </div>
-    <div class="three columns">
-      <h3><a href="https://twitter.com/hoffergabor" target="_blank" title="@hoffergabor"></a>@hoffergabor</h3>
-      <p>
-        <a class="twitter-timeline" href="https://twitter.com/hoffergabor" data-widget-id="322639210727219200">Tweets by @hoffergabor</a>
-        
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </p>
-    </div>
-    <div class="three columns">
-      <h3>You missed</h3>
-      <p><strong>13th NOV</strong><br><a href="http://app.hwsw.hu" target="_blank">App!mobile 2013 / UX sessions</a></p>
-      <p><strong>25th APR</strong><br>iOS Meetup <a href="http://www.meetup.com/budapest-iosMeetup/events/110496192/" target="_blank">April</a></p>
-      <p><strong>21st MAR</strong><br>iOS Meetup <a href="http://www.meetup.com/budapest-iosMeetup/events/106662242/" target="_blank">March</a></p>
-      <p><strong>16th FEB</strong><br>Kürt Akadémia / III. SAM<br><a href="http://www.kurt-akademia.hu/kepzeseink/smartmobil/sam/sam-naplo/" target="_blank">WYDIWYG</a></p>
-    </div>
-    <div class="three columns">
-      <h3>Let's meet</h3>
-      <p><strong>29th NOV</strong><br>Kürt Akadémia / <a href="http://www.kurt-akademia.hu/hu/kepzesek/3/smartmobil_kepzes/oktatok" target="_blank">SmartMobile course</a></p>
-      <p><strong>SOMETIMES</strong><br>You can find me at Prezi's San Francisco office.</p>
-      <p><strong>ANYTIME</strong><br>Meet me at Prezi's amazing Budapest office. (Don't forget to tell me before)</p>
-    </div>
-  </div>
+  </timeline>
 
-  <div class="row feed">
-    <div class="three columns">
-      <h3>I'm working on</h3>
-      <p>Super secret Prezi stuff... :)</p>
-      <p>My Belgian Saison to enter a competition in 2014</p>
-    </div>
-    <div class="three columns">
-      <h3>I spoke on SmartMobile</h3>
-      <p><iframe width="100%" height="200" src="http://www.youtube.com/embed/e6PiLrbo8zo?rel=0" frameborder="0" allowfullscreen></iframe></p>
-    </div>
-    <div class="three columns">
-      <h3>I spoke on HWSW's App!2013</h3>
-      <p><iframe width="100%" height="200" src="http://www.youtube.com/embed/5MimZQtH3YU?rel=0" frameborder="0" allowfullscreen></iframe></p>
-    </div>
-    <div class="three columns">
-      <h3>I entertain in Dokkerman</h3>
-      <p><iframe width="100%" height="200" src="http://www.youtube.com/embed/WW_8xDH4J7Q?rel=0" frameborder="0" allowfullscreen></iframe></p>
-    </div>
-  </div>
+  <script type="text/javascript">
+    window.onload = function() { tabletop() };
 
-  <div class="footer"><div class="row">
-    <div class="three columns">
-      <h5>I do this</h5>
-      <ul>
-        <li><strong>DESIGN</strong> / UI, IxD, print, web</li>
-        <li><strong>CODE</strong> / too many to list...</li>
-        <li><strong>BREW</strong> / beer</li>
-        <li><strong>SING</strong> / <a href="http://www.dokkerman.com" target="_blank">Dokkerman</a></li>
-      </ul>
-    </div>
-    <div class="three columns">
-      <h5>I learned at</h5>
-      <ul>
-        <li><strong>LIFE</strong> / everything</li>
-        <li><strong><a href="http://www.mome.hu" target="_blank">MOME</a></strong> / industrial design</li>
-        <li><strong><a href="http://www.pte.hu" target="_blank">PTE-PMMK</a></strong> / IT, teaching </li>
-        <li><strong><a href="http://www.leowey-pecs.hu" target="_blank">Leőwey Klára High</a></strong> / the basics</li>
-      </ul>
-    </div>
-    <div class="three columns">
-      <h5>I worked at</h5>
-      <ul>
-        <li><strong>CURRENTLY</strong> / <a href="http://www.prezi.com" target="_blank">Prezi</a></li>  
-        <li><strong>2006-2012</strong> / <a href="http://www.coandco.cc" target="_blank">Co&amp;Co</a></li>  
-        <li><strong>2002-2012</strong> / freelance</li>
-        <li><strong>1998-2002</strong> / bartender mostly</li>
-      </ul>
-    </div>
-    <div class="three columns">
-      <h5>You can reach me at</h5>
-      <ul>
-        <li><a href="http://prezi.com/about/gabor-hoffer/" target="_blank">prezi.com/about/gabor-hoffer</a></li>
-        <li><a href="mailto:hoffergabor@gmail.com">hoffergabor@gmail.com</a></li>
-        <li><strong>LINKEDIN</strong> / <a href="http://www.linkedin.com/pub/gábor-hoffer/52/897/b30">hoffergabor</a></li>
-        <li><strong>TWITTER</strong> / <a href="https://twitter.com/hoffergabor">@hoffergabor</a></li>
-      </ul>
-    </div>
-  </div></div>
+    var references = 'https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml';
+
+    function tabletop() {
+      Tabletop.init( { key: references,
+                       callback: showInfo,
+                       simpleSheet: true } )
+    }
+
+    function showInfo(data, tabletop) {
+      console.log("https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml")
+      if (data.length > 0) {
+        console.log("Loading references...")
+        console.log("#####################################")
+        for (i = 0; i < data.length; i++) {
+          var reference = data[i];
+          console.log(reference.name + " - loaded")
+        }
+        console.log("#####################################")
+      } else {
+        console.warn('No references found in spreadsheet.');
+      }
+
+    }
+  </script>
 
 </body>
 </html>
