@@ -75,17 +75,20 @@
     function showInfo(data, tabletop) {
       console.log("https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml")
       if (data.length > 0) {
-        console.log("Loading references...")
-        console.log("#####################################")
+        console.log("Loading references...");
+        console.log("#####################################");
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
-          console.log(reference.name + " - loaded")
+          console.log(reference.name + " - loaded");
           if years.indexOf(reference.year) == -1 {
-            years.push(reference.year)
-            console.log(reference.year + " - added")
+            years.push(reference.year);
+            console.log(reference.year + " - added");
           }
         }
-        console.log("#####################################")
+        less.modifyVars({
+          '@numberofyears': years.length;
+        });
+        console.log("#####################################");
       } else {
         console.warn('No references found in spreadsheet.');
       }
