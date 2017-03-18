@@ -218,18 +218,27 @@ timeline {
         .monthloop(12);
 
         date {
+          background: @basecolor;
+          display: block;
+          color: white;
+          box-sizing: border-box;
 
           @media screen and (max-width: @breakpoint1) {
-            background: @basecolor;
-            color: white;
-            display: block;
             font-size: 1.5vh;
             padding-left: @basepadding * 4;
             padding-right: @basepadding * 4;
             padding-top: @basepadding / 2;
             padding-bottom: @basepadding / 2;
-            box-sizing: border-box;
           }
+          @media screen and (min-width: @breakpoint1) {
+            font-size: 1.5vw;
+            width: 50vh;
+            transform: rotateZ(-90deg);
+            transform-origin: top left;
+            top: 50vh;
+            position: relative;
+          }
+
         }
 
         h3 {
@@ -261,19 +270,6 @@ timeline {
           @media screen and (max-width: @breakpoint1) {
             left: 50vw;
           }
-
-          date {
-            @media screen and (min-width: @breakpoint1) {
-              display: block;
-              width: 50vh;
-              transform: rotateZ(-90deg);
-              transform-origin: top left;
-              top: 50vh;
-              background: @basecolor;
-              position: relative;
-              color: white;
-            }
-          }
         }
 
         &.odd-1 {
@@ -282,16 +278,6 @@ timeline {
           date {
             @media screen and (max-width: @breakpoint1) {
               text-align: right;
-            }
-            @media screen and (min-width: @breakpoint1) {
-              display: block;
-              width: 50vh;
-              transform: rotateZ(-90deg);
-              transform-origin: top left;
-              top: 50vh;
-              background: @basecolor;
-              position: relative;
-              color: white;
             }
           }
 
