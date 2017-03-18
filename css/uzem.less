@@ -226,6 +226,10 @@ timeline {
 
         date {
 
+          @media screen and (max-width: @breakpoint1) {
+            background: @basecolor;
+            color: white;
+          }
         }
 
         h3 {
@@ -243,6 +247,7 @@ timeline {
 
           @media screen and (max-width: @breakpoint1) {
             font-size: 2vh;
+            padding-left: @basepadding * 4;
           }
         }
 
