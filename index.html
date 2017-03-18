@@ -101,6 +101,7 @@
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
           console.log(reference.name + " - loaded from - " + reference.year);
+          $( "." + reference.year ).append( "<p>" + reference.name + "</p>" );
         }
         console.log("#####################################");
       } else {
