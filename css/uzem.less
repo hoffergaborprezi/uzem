@@ -191,7 +191,8 @@ timeline {
       }
 
       reference {
-        color: red;
+        display: block;
+        position: absolute;
 
         .monthloop(@counter) when (@counter > 0) {
           .monthloop((@counter - 1));
