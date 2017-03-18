@@ -79,7 +79,8 @@
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
           console.log(reference.name + " - loaded");
-          if yearsArray.indexOf(reference.year) == -1 {
+          yearNotIn = yearsArray.indexOf(reference.year)
+          if yearNotIn == -1 {
             yearsArray.push(reference.year);
             console.log(reference.year + " - added");
           }
