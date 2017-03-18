@@ -154,7 +154,8 @@ timeline {
             left: 0;
           }
           span {
-            content: 2017 - @counter + 1;
+            @actualyear: 2017 - @counter + 1;
+            content: "@{actualyear}";
           }
         }
       }
