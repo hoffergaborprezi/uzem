@@ -5,6 +5,8 @@
 
 @basecolor: black;
 
+@basepadding: 6px;
+
 .basefont {
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
@@ -25,7 +27,7 @@ html {
 
 body {
   .basefont;
-  font-size: 16px;
+  font-size: @basepadding*3;
   padding: 0;
   margin: 0;
 }
@@ -41,8 +43,8 @@ header {
   position: fixed;
   width: 100%;
   display: block;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: @basepadding*4;
+  padding-left: @basepadding*4;
   z-index: 100;
   box-sizing: border-box;
 
@@ -54,15 +56,15 @@ header {
   }
 
   h2, h3 {
-    font-size: 16px;
-    margin-left: 12px;
+    font-size: @basepadding*3;
+    margin-left: @basepadding*3;
     display: inline;
     font-weight: 400;
   }
 
   h3 {
     float: right;
-    margin-right: 20px;
+    margin-right: @basepadding*4;
   }
 
 }
