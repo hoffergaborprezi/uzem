@@ -201,7 +201,7 @@ timeline {
         @media screen and (max-width: @breakpoint1) {
           width: 50vw;
           height: auto;
-          max-width: auto;
+          max-width: none;
         }
 
         .monthloop(@counter) when (@counter > 0) {
@@ -264,9 +264,25 @@ timeline {
         }
 
         &.odd-1 {
+          display: table;
+
           date {
             @media screen and (max-width: @breakpoint1) {
               text-align: right;
+            }
+          }
+
+          h3 {
+            @media screen and (min-width: @breakpoint1) {
+              display: table;
+              vertical-align: bottom;
+            }
+          }
+
+          p {
+            @media screen and (min-width: @breakpoint1) {
+              display: table;
+              vertical-align: bottom;
             }
           }
         }
