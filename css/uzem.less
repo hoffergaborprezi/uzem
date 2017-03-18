@@ -103,6 +103,8 @@ timeline {
 
       &:nth-child(odd) { background: rgba(0,0,0,0); }
 
+      &:nth-child(@yearnumber) { left: 100vw*(@yearnumber-1); }
+
       span {
         .displayfont;
         display: block;
