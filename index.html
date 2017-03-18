@@ -71,7 +71,7 @@
     }
 
     function showInfo(data, tabletop) {
-      var years = [];
+      var yearsArray = [];
       console.log("https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml")
       if (data.length > 0) {
         console.log("Loading references...");
@@ -79,8 +79,8 @@
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
           console.log(reference.name + " - loaded");
-          if years.indexOf(reference.year) == -1 {
-            years.push(reference.year);
+          if yearsArray.indexOf(reference.year) == -1 {
+            yearsArray.push(reference.year);
             console.log(reference.year + " - added");
           }
         }
