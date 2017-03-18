@@ -215,15 +215,6 @@ timeline {
 
         .monthloop(12);
 
-        &.odd-0 {
-          @media screen and (min-width: @breakpoint1) {
-            top: 50vh;
-          }
-          @media screen and (max-width: @breakpoint1) {
-            left: 50vw;
-          }
-        }
-
         date {
 
           @media screen and (max-width: @breakpoint1) {
@@ -258,6 +249,23 @@ timeline {
             font-size: 2vh;
             padding-left: @basepadding * 4;
             padding-right: @basepadding * 2;
+          }
+        }
+
+        &.odd-0 {
+          @media screen and (min-width: @breakpoint1) {
+            top: 50vh;
+          }
+          @media screen and (max-width: @breakpoint1) {
+            left: 50vw;
+          }
+        }
+
+        &.odd-1 {
+          @media screen and (min-width: @breakpoint1) {
+          }
+          @media screen and (max-width: @breakpoint1) {
+            text-align: right;
           }
         }
 
