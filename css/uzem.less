@@ -135,6 +135,8 @@ timeline {
     left: 0;
 
     year {
+      height: 100vh;
+      width: 100vw;
       display: block;
       position: absolute;
       background: rgba(0,0,0,0.1);
@@ -147,23 +149,19 @@ timeline {
       .yearloop(@counter) when (@counter > 0) {
         .yearloop((@counter - 1));
         &:nth-child(@{counter}) {
-          if @counter > @numberofyears - 15 {
-            left: 100vw * (@counter - 1);
-            height: 100vh;
-            width: 100vw;
-            @media screen and (max-width: @breakpoint1) {
-              top: 100vh * (@counter - 1);
-              left: 0;
-            }
+          left: 100vw * (@counter - 1);
+          @media screen and (max-width: @breakpoint1) {
+            top: 100vh * (@counter - 1);
+            left: 0;
           }
-          else {
+          when (@counter > @numberofyears - 15) {
             left: 100vw * 15 + 50vw * (@counter - 16);
             height: 100vh;
             width: 50vw;
             @media screen and (max-width: @breakpoint1) {
+              top: 100vh * 15 + 50vw * (@counter - 16);
               height: 50vh;
               width: 100vw;
-              top: 100vh * 15 + 50vw * (@counter - 16);
               left: 0;
             }
           }
