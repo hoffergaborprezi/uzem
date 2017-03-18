@@ -146,16 +146,16 @@ timeline {
         background: rgba(0,0,0,0);
       }
 
-      .yearloop(@counter) when (@counter > 0) {
+      .yearloop(@counter) when (@counter = 0) {
         .yearloop((@counter - 1));
         &:nth-child(@{counter}) {
-          left: 100vw * (@counter - 1);
+          left: 100vw * (@counter);
           @media screen and (max-width: @breakpoint1) {
-            top: 100vh * (@counter - 1);
+            top: 100vh * (@counter);
             left: 0;
           }
           &:after {
-            @actualyear: 2017 - @counter + 1;
+            @actualyear: 2017 - @counter;
             content: "@{actualyear}";
           }
         }
