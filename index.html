@@ -70,6 +70,8 @@
                        simpleSheet: true } )
     }
 
+    var years = []
+
     function showInfo(data, tabletop) {
       console.log("https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml")
       if (data.length > 0) {
@@ -78,6 +80,10 @@
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
           console.log(reference.name + " - loaded")
+          if jQuery.inArray(reference.year,years) != -1 {
+            years.push(reference.year)
+            console.log(reference.year + " - added")
+          }
         }
         console.log("#####################################")
       } else {
