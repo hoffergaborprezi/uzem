@@ -7,7 +7,7 @@
 @basepadding: 5px;
 
 @breakpoint1: 500px;
-@numberofyears: 34;
+@numberofyears: 35;
 
 .basefont {
   font-family: 'Ubuntu Mono', monospace;
@@ -146,16 +146,16 @@ timeline {
         background: rgba(0,0,0,0);
       }
 
-      .yearloop(@counter) when (@counter = 0) {
+      .yearloop(@counter) when (@counter > 0) {
         .yearloop((@counter - 1));
         &:nth-child(@{counter}) {
-          left: 100vw * (@counter);
+          left: 100vw * (@counter - 1);
           @media screen and (max-width: @breakpoint1) {
-            top: 100vh * (@counter);
+            top: 100vh * (@counter - 1);
             left: 0;
           }
           &:after {
-            @actualyear: 2017 - @counter;
+            @actualyear: 2017 - @counter + 1;
             content: "@{actualyear}";
           }
         }
