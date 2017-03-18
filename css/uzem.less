@@ -27,7 +27,7 @@ html {
 
 body {
   .basefont;
-  font-size: @basepadding*3;
+  font-size: @basepadding * 3;
   padding: 0;
   margin: 0;
 }
@@ -42,8 +42,8 @@ header {
   position: fixed;
   width: 100%;
   display: block;
-  padding-top: @basepadding*4;
-  padding-left: @basepadding*4;
+  padding-top: @basepadding * 4;
+  padding-left: @basepadding * 4;
   z-index: 100;
   box-sizing: border-box;
 
@@ -55,15 +55,15 @@ header {
   }
 
   h2, h3 {
-    font-size: @basepadding*3;
-    margin-left: @basepadding*2;
+    font-size: @basepadding * 3;
+    margin-left: @basepadding * 2;
     display: inline;
     font-weight: 400;
   }
 
   h3 {
     float: right;
-    margin-right: @basepadding*4;
+    margin-right: @basepadding * 4;
   }
 
 }
@@ -103,14 +103,14 @@ timeline {
 
       &:nth-child(odd) { background: rgba(0,0,0,0); }
 
-      &:nth-child(@yearnumber) { left: 100vw*(@yearnumber-1); }
+      &:nth-child(@yearnumber) { left: 100vw * (@yearnumber - 1); }
 
       span {
         .displayfont;
         display: block;
         position: absolute;
-        bottom: @basepadding*4;
-        left: @basepadding*4;
+        bottom: @basepadding * 4;
+        left: @basepadding * 4;
         font-size: 35px;
       }
     }
