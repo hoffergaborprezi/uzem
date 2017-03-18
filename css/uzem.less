@@ -105,9 +105,14 @@ timeline {
         background: rgba(0,0,0,0);
       }
 
-      &:nth-child(@yearnumber) {
-        left: 100vw * @yearnumber - 1;
+      .yearloop(@counter) when (@counter > 0) {
+        .yearloop((@counter - 1));    // next iteration
+        &:nth-child(@{counter}) {
+          left: 100vw * (@counter - 1); // code for each iteration
+        }
       }
+
+      .yearloop(4);
 
       span {
         .displayfont;
