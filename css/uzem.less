@@ -208,7 +208,9 @@ timeline {
         .monthloop(12);
 
         &.odd-0 {
-          top: 50vh;
+          @media screen and (min-width: @breakpoint1) {
+            top: 50vh;
+          }
           @media screen and (max-width: @breakpoint1) {
             left: 50vw;
           }
