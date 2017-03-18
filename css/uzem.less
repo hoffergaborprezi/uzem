@@ -1,31 +1,42 @@
 /* font families
-  OLD
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Domine', serif;
-  NEW
   font-family: 'Pathway Gothic One', sans-serif;
   font-family: 'Ubuntu Mono', monospace;
 */
+
+@basecolor: black;
+
+.basefont {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
+  color: @basecolor;
+}
+
+.displayfont {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+  color: @basecolor;
+}
 
 html {
   padding: 0;
 }
 
 body {
-  font-family: 'Ubuntu Mono', monospace;
-  font-weight: 400;
+  .basefont
   font-size: 16px;
-  color: black;
   padding: 0;
   margin: 0;
 }
 
 a {
   text-decoration: underline;
-  color: black;
+  color: @basecolor;
 }
 
 header {
+
   text-align: left;
   position: fixed;
   width: 100%;
@@ -34,25 +45,26 @@ header {
   padding-left: 20px;
   z-index: 100;
   box-sizing: border-box;
+
+  h1 {
+    .displayfont
+    font-size: 35px;
+    margin-bottom: 0px;
+    display: inline;
+  }
+
+  h2, h3 {
+    font-size: 16px;
+    margin-left: 12px;
+    display: inline;
+    font-weight: 400;
+  }
+
+  h3 {
+    float: right;
+    margin-right: 20px;
+  }
+  
 }
 
-header h1 {
-  font-family: 'Pathway Gothic One', sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 35px;
-  margin-bottom: 0px;
-  line-height: 1;
-  display: inline;
-}
-
-header h2, header h3 {
-  font-size: 16px;
-  margin-left: 12px;
-  display: inline;
-}
-
-header h3 {
-  float: right;
-  margin-right: 20px;
 }
