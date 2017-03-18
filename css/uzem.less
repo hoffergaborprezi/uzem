@@ -152,7 +152,19 @@ timeline {
         }
       }
 
+      .yearloopmobile(@counter) when (@counter > 0) {
+        .yearloopmobile((@counter - 1));
+        &:nth-child(@{counter}) {
+          left: 100vh * (@counter - 1);
+        }
+      }
+
       .yearloop(4);
+
+      @media screen and (max-width: @breakpoint1) {
+        yearloopmobile(4);
+        left: 0;
+      }
 
       span {
         .displayfont;
