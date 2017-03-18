@@ -149,22 +149,14 @@ timeline {
         .yearloop((@counter - 1));
         &:nth-child(@{counter}) {
           left: 100vw * (@counter - 1);
-        }
-      }
-
-      .yearloopmobile(@counter) when (@counter > 0) {
-        .yearloopmobile((@counter - 1));
-        &:nth-child(@{counter}) {
-          left: 100vh * (@counter - 1);
+          @media screen and (max-width: @breakpoint1) {
+            top: 100vw * (@counter - 1);
+            left: 0;
+          }
         }
       }
 
       .yearloop(4);
-
-      @media screen and (max-width: @breakpoint1) {
-        yearloopmobile(4);
-        left: 0;
-      }
 
       span {
         .displayfont;
