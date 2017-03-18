@@ -80,7 +80,7 @@
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
           console.log(reference.name + " - loaded")
-          if years.indeyOf(reference.year) == -1 {
+          if years.indexOf(reference.year) == -1 {
             years.push(reference.year)
             console.log(reference.year + " - added")
           }
