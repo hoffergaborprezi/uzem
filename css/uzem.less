@@ -7,6 +7,8 @@
 
 @basepadding: 5px;
 
+@breakpoint1: 500px
+
 .basefont {
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 400;
@@ -47,11 +49,21 @@ header {
   z-index: 100;
   box-sizing: border-box;
 
+  @media screen and (max-width: @breakpoint1) {
+    text-align: center;
+    position: absolute;
+    padding-left: 0;
+  }
+
   h1 {
     .displayfont;
     font-size: 35px;
     margin-bottom: 0px;
     display: inline;
+
+    @media screen and (max-width: @breakpoint1) {
+      display: block;
+    }
   }
 
   h2, h3 {
@@ -59,11 +71,21 @@ header {
     margin-left: @basepadding * 2;
     display: inline;
     font-weight: 400;
+
+    @media screen and (max-width: @breakpoint1) {
+      margin-left: 0;
+      display: block;
+    }
   }
 
   h3 {
     float: right;
     margin-right: @basepadding * 4;
+
+    @media screen and (max-width: @breakpoint1) {
+      margin-right: 0;
+      float: none;
+    }
   }
 
 }
@@ -106,9 +128,9 @@ timeline {
       }
 
       .yearloop(@counter) when (@counter > 0) {
-        .yearloop((@counter - 1));    // next iteration
+        .yearloop((@counter - 1));
         &:nth-child(@{counter}) {
-          left: 100vw * (@counter - 1); // code for each iteration
+          left: 100vw * (@counter - 1);
         }
       }
 
