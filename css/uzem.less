@@ -263,9 +263,23 @@ timeline {
 
         &.odd-1 {
 
-          date, h3 {
+          date {
             @media screen and (max-width: @breakpoint1) {
               text-align: right;
+            }
+          }
+
+          h3 {
+            @media screen and (max-width: @breakpoint1) {
+              text-align: right;
+              padding-right: @basepadding * 4;
+              padding-left: @basepadding * 2;
+            }
+          }
+
+          p {
+            @media screen and (max-width: @breakpoint1) {
+              padding-right: @basepadding * 4;
             }
           }
         }
