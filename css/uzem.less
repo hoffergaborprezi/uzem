@@ -270,6 +270,16 @@ timeline {
             @media screen and (max-width: @breakpoint1) {
               text-align: right;
             }
+            @media screen and (min-width: @breakpoint1) {
+              display: block;
+              width: 50vh;
+              transform: rotateZ(-90deg);
+              transform-origin: top left;
+              top: 50vh;
+              background: @basecolor;
+              position: relative;
+              color: white;
+            }
           }
 
           h3 {
