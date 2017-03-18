@@ -238,7 +238,12 @@ timeline {
         }
 
         p {
+          .displayfont;
+          font-size: 2vw;
 
+          @media screen and (max-width: @breakpoint1) {
+            font-size: 2vh;
+          }
         }
 
       }
