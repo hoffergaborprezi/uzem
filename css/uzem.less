@@ -8,6 +8,7 @@
 
 @breakpoint1: 500px;
 @numberofyears: 35;
+@numberofhalfyears: 15;
 
 .basefont {
   font-family: 'Ubuntu Mono', monospace;
@@ -108,7 +109,7 @@ timeline {
 
   .line {
     display: block;
-    width: 100% * @numberofyears;
+    width: 100% * @numberofhalfyears + 50% * @numberofyears;
     background: @basecolor;
     background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
     background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%,rgba(0,0,0,0) 100%);
@@ -119,7 +120,7 @@ timeline {
 
     @media screen and (max-width: @breakpoint1) {
       width: 1vw;
-      height: 100vh * @numberofyears;
+      height: 100vh * @numberofhalfyears + 50vh * @numberofyears;
       left: 49.5vw;
       top: 0;
       background: @basecolor;
@@ -155,12 +156,12 @@ timeline {
             left: 0;
           }
 
-          & when (@counter > 15) {
-            left: 100vw * 15 + 50vw * (@counter - 16);
+          & when (@counter > @numberofhalfyears + 1) {
+            left: 100vw * @numberofhalfyears + 50vw * (@counter - @numberofhalfyears - 1);
             height: 100vh;
             width: 50vw;
             @media screen and (max-width: @breakpoint1) {
-              top: 100vh * 15 + 50vw * (@counter - 16);
+              top: 100vh * @numberofhalfyears + 50vw * (@counter - @numberofhalfyears - 1);
               height: 50vh;
               width: 100vw;
               left: 0;
