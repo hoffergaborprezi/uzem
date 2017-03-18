@@ -102,7 +102,7 @@
           var reference = data[i];
           console.log(reference.name + " - loaded from - " + reference.year);
           $( "." + reference.year ).append(
-            "<reference class='offset-" + reference.month + "'><date>" + reference.date +
+            "<reference class='offset-" + reference.month + " .number" + i + "'><date>" + reference.date +
             "</date><h3>" + reference.name + "</h3><p>" + reference.desc +
             "</p></reference>" );
         }
