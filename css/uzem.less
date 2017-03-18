@@ -93,7 +93,7 @@ header {
 }
 
 timeline {
-  width: 100%;
+  width: (100% * @numberoffullyears) + (50% * (@numberofyears - @numberoffullyears + 1));
   height: 100vh;
   display: block;
   bottom: 0vh;
@@ -101,7 +101,7 @@ timeline {
   overflow: scroll;
 
   @media screen and (max-width: @breakpoint1) {
-    height: 100vh * @numberofyears;
+    height: (100vh * @numberoffullyears) + (50vh * (@numberofyears - @numberoffullyears + 1));
     top: 30vh;
     position: absolute;
     overflow: visible;
@@ -109,7 +109,7 @@ timeline {
 
   .line {
     display: block;
-    width: (100% * @numberoffullyears) + (50% * (@numberofyears - @numberoffullyears));
+    width: (100% * @numberoffullyears) + (50% * (@numberofyears - @numberoffullyears + 1));
     background: @basecolor;
     background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
     background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 5%, rgba(0,0,0,1) 95%,rgba(0,0,0,0) 100%);
@@ -120,7 +120,7 @@ timeline {
 
     @media screen and (max-width: @breakpoint1) {
       width: 1vw;
-      height: (100vh * @numberoffullyears) + (50vh * (@numberofyears - @numberoffullyears));
+      height: (100vh * @numberoffullyears) + (50vh * (@numberofyears - @numberoffullyears + 1));
       left: 49.5vw;
       top: 0;
       background: @basecolor;
