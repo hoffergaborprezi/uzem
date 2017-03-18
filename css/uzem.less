@@ -193,6 +193,12 @@ timeline {
       reference {
         display: block;
         position: absolute;
+        height: 50vh;
+        width: auto;
+        @media screen and (max-width: @breakpoint1) {
+          width: 50vw
+          height: auto;
+        }
 
         .monthloop(@counter) when (@counter > 0) {
           .monthloop((@counter - 1));
