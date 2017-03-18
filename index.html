@@ -44,18 +44,40 @@
   <timeline>
     <div class="line"></div>
     <div class="yearmarkers">
-      <year>
-        <span>2017...</span>
-      </year>
-      <year>
-        <span>2016</span>
-      </year>
-      <year>
-        <span>2015</span>
-      </year>
-      <year>
-        <span>2014</span>
-      </year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
+      <year><span></span></year>
     </div>
   </timeline>
 
@@ -73,13 +95,13 @@
     function showInfo(data, tabletop) {
       console.log("https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml")
       if (data.length > 0) {
-        console.log("Loading references...")
-        console.log("#####################################")
+        console.log("Loading references...");
+        console.log("#####################################");
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
-          console.log(reference.name + " - loaded from - " + reference.year)
+          console.log(reference.name + " - loaded from - " + reference.year);
         }
-        console.log("#####################################")
+        console.log("#####################################");
       } else {
         console.warn('No references found in spreadsheet.');
       }

@@ -7,7 +7,7 @@
 @basepadding: 5px;
 
 @breakpoint1: 500px;
-@numberofyears: 4;
+@numberofyears: 34;
 
 .basefont {
   font-family: 'Ubuntu Mono', monospace;
@@ -152,6 +152,9 @@ timeline {
           @media screen and (max-width: @breakpoint1) {
             top: 100vh * (@counter - 1);
             left: 0;
+          }
+          span {
+            content: 2017 - @counter + 1;
           }
         }
       }
