@@ -108,6 +108,7 @@
           $( "." + reference.year ).append(
             "<reference class='offset-" + reference.month + " odd-" + i % 2 + "'><date>" + reference.date +
             "</date><h3>" + reference.name + "</h3><p>" + reference.desc +
+            "<br /><a href='" + reference.url + "' target='_blank'>" + reference.url +
             "</p></reference>" );
         }
         console.log("#####################################");
