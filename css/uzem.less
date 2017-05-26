@@ -5,6 +5,13 @@
 
 @basecolor: black;
 @link: #3181FF;
+
+@prezicolor: #3181ff;
+@coandcocolor: red;
+@personalcolor: @basecolor;
+@teachingcolor: gray;
+@studiescolor: blue;
+
 @basepadding: 5px;
 
 @breakpoint1: 500px;
@@ -249,6 +256,36 @@ timeline {
             margin-left: -5vw;
           }
 
+        }
+
+        &.prezi {
+          date {
+            background: @prezicolor;
+          }
+        }
+
+        &.personal {
+          date {
+            background: @personalcolor;
+          }
+        }
+
+        &.coandco {
+          date {
+            background: @coandcocolor;
+          }
+        }
+
+        &.studies {
+          date {
+            background: @studiescolor;
+          }
+        }
+
+        &.teaching {
+          date {
+            background: @teachingcolor;
+          }
         }
 
         h3 {
