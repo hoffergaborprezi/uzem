@@ -314,9 +314,6 @@ timeline {
           @media screen and (min-width: @breakpoint1) {
             top: 50vh;
           }
-          @media screen and (max-width: @breakpoint1) {
-            left: 50.5vw;
-          }
 
           date {
             @media screen and (min-width: @breakpoint1) {
@@ -328,6 +325,10 @@ timeline {
 
         &.odd-1 {
           display: table;
+          
+          @media screen and (max-width: @breakpoint1) {
+            left: 50.5vw;
+          }
 
           date {
             @media screen and (max-width: @breakpoint1) {
