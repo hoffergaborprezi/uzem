@@ -277,6 +277,12 @@ timeline {
           @media screen and (max-width: @breakpoint1) {
             left: 50vw;
           }
+
+          date {
+            @media screen and (min-width: @breakpoint1) {
+              text-align: right;
+            }
+          }
         }
 
         &.odd-1 {
@@ -284,9 +290,6 @@ timeline {
 
           date {
             @media screen and (max-width: @breakpoint1) {
-              text-align: right;
-            }
-            @media screen and (min-width: @breakpoint1) {
               text-align: right;
             }
           }
