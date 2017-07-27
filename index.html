@@ -107,8 +107,8 @@
           console.log(reference.name + " - loaded from - " + reference.year);
           $( "." + reference.year ).append(
             "<reference class='offset-" + reference.month +
-            " erayear-" + if (reference.yearend != NULL) {reference.yearend-reference.year} +
-            " eramonth-" + if (reference.monthend != NULL) {reference.monthend-reference.month} + 
+            " erayear-" + reference.yearend-reference.year +
+            " eramonth-" + reference.monthend-reference.month +
             " odd-" + i % 2 + " " + reference.type +
             "'><date>" + reference.date +
             "</date><h3>" + reference.name + "</h3><p>" + reference.desc +
