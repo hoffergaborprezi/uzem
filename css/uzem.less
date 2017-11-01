@@ -222,7 +222,7 @@ timeline {
         .eraloop(@counter) when (@counter > 0) {
           .eraloop((@counter - 1));
           &.era-@{counter} {
-            width: : (100vw / 12) * @counter;
+            width: (100vw / 12) * @counter;
             @media screen and (max-width: @breakpoint1) {
               height: (100vh / 12) * @counter;
             }
