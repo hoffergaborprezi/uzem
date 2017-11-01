@@ -108,7 +108,7 @@
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
           console.log(reference.name + " - loaded from - " + reference.year);
-          if reference.era != NULL {
+          if (reference.era != NULL) {
             $( "." + reference.year ).append(
               "<reference class='offset-" + reference.month +
               " era-" + reference.era +
