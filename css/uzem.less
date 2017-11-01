@@ -230,6 +230,21 @@ timeline {
 
         .monthloop(12);
 
+        .era {
+
+          .eraloop(@counter) when (@counter > 0) {
+            .eraloop((@counter - 1));
+            &.offset-@{counter} {
+              width: (100vw / 12) * @counter;
+              @media screen and (max-width: @breakpoint1) {
+                height: (100vh / 12) * @counter;
+              }
+            }
+          }
+
+          .eraloop(50);
+        }
+
         date {
           background: @basecolor;
           display: block;
