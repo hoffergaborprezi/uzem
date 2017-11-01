@@ -108,14 +108,26 @@
         for (i = 0; i < data.length; i++) {
           var reference = data[i];
           console.log(reference.name + " - loaded from - " + reference.year);
-          $( "." + reference.year ).append(
-            "<reference class='offset-" + reference.month +
-            " era-" + reference.era +
-            " odd-" + i % 2 + " " + reference.type +
-            "'><date>" + reference.date +
-            "</date><h3>" + reference.name + "</h3><p>" + reference.desc +
-            " <a href='" + reference.url + "' target='_blank'>☛" +
-            "</p></reference>" );
+          if reference.era != NULL {
+            $( "." + reference.year ).append(
+              "<reference class='offset-" + reference.month +
+              " era-" + reference.era +
+              " odd-" + i % 2 + " " + reference.type +
+              "'><date>" + reference.date +
+              "</date><h3>" + reference.name + "</h3><p>" + reference.desc +
+              " <a href='" + reference.url + "' target='_blank'>☛" +
+              "</p></reference>" );
+          }
+          else {
+            $( "." + reference.year ).append(
+              "<era class='offset-" + reference.month +
+              " era-" + reference.era +
+              " odd-" + i % 2 + " " + reference.type +
+              "'><date>" + reference.date +
+              "</date><h3>" + reference.name + "</h3><p>" + reference.desc +
+              " <a href='" + reference.url + "' target='_blank'>☛" +
+              "</p></reference>" );
+          }
         }
         console.log("#####################################");
       } else {
