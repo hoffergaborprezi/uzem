@@ -230,20 +230,17 @@ timeline {
 
         .monthloop(12);
 
-        .era {
-
-          .eraloop(@counter) when (@counter > 0) {
-            .eraloop((@counter - 1));
-            &.era-@{counter} {
-              width: (100vw / 12) * @counter;
-              @media screen and (max-width: @breakpoint1) {
-                height: (100vh / 12) * @counter;
-              }
+        .eraloop(@counter) when (@counter > 0) {
+          .eraloop((@counter - 1));
+          &.era-@{counter} {
+            width: (100vw / 12) * @counter;
+            @media screen and (max-width: @breakpoint1) {
+              height: (100vh / 12) * @counter;
             }
           }
-
-          .eraloop(100);
         }
+
+        .eraloop(100);
 
         date {
           background: @basecolor;
