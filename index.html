@@ -87,6 +87,9 @@
   </timeline>
 
   <script type="text/javascript">
+
+    less.watch();
+
     window.onload = function() { tabletop() };
 
     var references = 'https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml';
@@ -107,7 +110,7 @@
           console.log(reference.name + " - loaded from - " + reference.year);
           $( "." + reference.year ).append(
             "<reference class='offset-" + reference.month +
-            " era-" + reference.era + 
+            " era-" + reference.era +
             " odd-" + i % 2 + " " + reference.type +
             "'><date>" + reference.date +
             "</date><h3>" + reference.name + "</h3><p>" + reference.desc +
