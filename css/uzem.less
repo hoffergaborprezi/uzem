@@ -201,6 +201,38 @@ timeline {
         }
       }
 
+      era {
+
+        display: block;
+        position: absolute;
+
+        .monthloop(@counter) when (@counter > 0) {
+          .monthloop((@counter - 1));
+          &.offset-@{counter} {
+            left: (100vw / 12) * (12 - @counter);
+            @media screen and (max-width: @breakpoint1) {
+              top: (100vh / 12) * (12 - @counter);
+              left: 0;
+            }
+          }
+        }
+
+        .monthloop(12);
+
+        .eraloop(@counter) when (@counter > 0) {
+          .eraloop((@counter - 1));
+          &.era-@{counter} {
+            width: : (100vw / 12) * @counter;
+            @media screen and (max-width: @breakpoint1) {
+              height: (100vh / 12) * @counter;
+            }
+          }
+        }
+
+        .eraloop(100);
+
+      }
+
       reference {
         display: block;
         position: absolute;
@@ -215,17 +247,6 @@ timeline {
           height: 50vh;
           max-width: 20vw;
           width: auto;
-        }
-
-        .monthloop(@counter) when (@counter > 0) {
-          .monthloop((@counter - 1));
-          &.offset-@{counter} {
-            left: (100vw / 12) * (12 - @counter);
-            @media screen and (max-width: @breakpoint1) {
-              top: (100vh / 12) * (12 - @counter);
-              left: 0;
-            }
-          }
         }
 
         .monthloop(12);
