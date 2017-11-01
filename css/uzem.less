@@ -248,6 +248,17 @@ timeline {
           max-width: 20vw;
           width: auto;
         }
+        
+        .monthloop(@counter) when (@counter > 0) {
+          .monthloop((@counter - 1));
+          &.offset-@{counter} {
+            left: (100vw / 12) * (12 - @counter);
+            @media screen and (max-width: @breakpoint1) {
+              top: (100vh / 12) * (12 - @counter);
+              left: 0;
+            }
+          }
+        }
 
         .monthloop(12);
 
