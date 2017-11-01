@@ -234,7 +234,7 @@ timeline {
 
           .eraloop(@counter) when (@counter > 0) {
             .eraloop((@counter - 1));
-            &.offset-@{counter} {
+            &.era-@{counter} {
               width: (100vw / 12) * @counter;
               @media screen and (max-width: @breakpoint1) {
                 height: (100vh / 12) * @counter;
@@ -242,7 +242,7 @@ timeline {
             }
           }
 
-          .eraloop(50);
+          .eraloop(100);
         }
 
         date {
