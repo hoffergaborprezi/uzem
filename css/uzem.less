@@ -151,6 +151,25 @@ timeline {
           left: @basepadding * 4;
           z-index: 15;
         }
+
+        /* REFERENCES */
+
+        reference {
+          display: block;
+          position: absolute;
+          box-sizing: border-box;
+          width: 49.5vw;
+
+          .monthloop(@counter) when (@counter > 0) {
+            .monthloop((@counter - 1));
+            &.offset-@{counter} {
+              top: (100vh / 12) * (12 - @counter);
+              left: 0;
+            }
+          }
+
+          .monthloop(12);
+
       }
     }
 
