@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+
+  <meta charset="utf-8"/>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Ubuntu+Mono">
+  <link rel="stylesheet/less" type="text/css" href="css/uzem.less">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Gábor Hoffer // lead designer @ Prezi.com</title>
+  <meta name="description" content="Personal webpage of Gábor Hoffer, designer @ Prezi.com, homebrewer and singer of Dokkerman and the Turkeying Fellaz.">
+  <link rel="author" href="https://www.linkedin.com/in/hoffergabor">
+  <link rel="publisher" href="https://www.linkedin.com/in/hoffergabor">
+
+  <!-- opengraph metatags -->
+  <meta property="og:title" content="Gábor Hoffer // designer @ Prezi.com">
+  <meta property="og:image" content="/img/gabor.hoffer.png">
+  <meta property="og:description" content="Personal webpage of Gábor Hoffer, designer @ Prezi.com, homebrewer and singer of Dokkerman and the Turkeying Fellaz.">
+
+  <!-- twitter metatags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gábor Hoffer // designer @ Prezi.com">
+  <meta name="twitter:description" content="Personal webpage of Gábor Hoffer, designer @ Prezi.com, homebrewer and singer of Dokkerman and the Turkeying Fellaz.">
+  <meta name="twitter:image" content="/img/gabor.hoffer.png">
+
+  <!-- LESS - http://lesscss.org/# - processes LESS files into CSS -->
+  <script src="js/less.min.js" type="text/javascript"></script>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <!-- tabletop.js - https://github.com/jsoma/tabletop - loads data from Google Spreadsheets -->
+  <script src="js/tabletop.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+  <header>
+    <h1>Gábor Hoffer</h1>
+    <h2>product design lead @ <a href="http://prezi.com/" target="_blank">Prezi.com</a>
+      <br />designer — manager — teacher — flame</h2>
+    <h3><a href="https://www.linkedin.com/in/hoffergabor" target="_blank">LinkedIn</a> —
+        <a href="https://medium.com/@hoffergabor" target="_blank">Medium</a> —
+        <a href="https://twitter.com/@hoffergabor" target="_blank">Twitter</a> —
+        <a href="mailto:hoffergabor@gmail.com" target="_blank">Email</a></h3>
+  </header>
+
+  <timeline>
+    <div class="line"></div>
+    <div class="yearmarkers">
+      <year class="2017"></year>
+      <year class="2016"></year>
+      <year class="2015"></year>
+      <year class="2014"></year>
+      <year class="2013"></year>
+      <year class="2012"></year>
+      <year class="2011"></year>
+      <year class="2010"></year>
+      <year class="2009"></year>
+      <year class="2008"></year>
+      <year class="2007"></year>
+      <year class="2006"></year>
+      <year class="2005"></year>
+      <year class="2004"></year>
+      <year class="2003"></year>
+      <year class="2002"></year>
+      <year class="2001"></year>
+      <year class="2000"></year>
+      <year class="1999"></year>
+      <year class="1998"></year>
+      <year class="1997"></year>
+      <year class="1996"></year>
+      <year class="1995"></year>
+      <year class="1994"></year>
+      <year class="1993"></year>
+      <year class="1992"></year>
+      <year class="1991"></year>
+      <year class="1990"></year>
+      <year class="1989"></year>
+      <year class="1988"></year>
+      <year class="1987"></year>
+      <year class="1986"></year>
+      <year class="1985"></year>
+      <year class="1984"></year>
+      <year class="1983"></year>
+    </div>
+  </timeline>
+
+  <script type="text/javascript">
+
+    less.watch();
+
+    window.onload = function() { tabletop() };
+
+    var references = 'https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml';
+
+    function tabletop() {
+      Tabletop.init( { key: references,
+                       callback: showInfo,
+                       simpleSheet: true } )
+    }
+
+    function showInfo(data, tabletop) {
+      console.log("https://docs.google.com/spreadsheets/d/1RgOnd5MqT14eQLNfiG_UMJXt3AFWRT-1S_VNOTMTots/pubhtml")
+      if (data.length > 0) {
+        console.log("Loading references...");
+        console.log("#####################################");
+        for (i = 0; i < data.length; i++) {
+          var reference = data[i];
+          console.log(reference.name + " - loaded from - " + reference.year);
+          if (reference.era == "") {
+            $( "." + reference.year ).append(
+              "<reference class='offset-" + reference.month +
+              " era-" + reference.era +
+              " odd-" + i % 2 + " " + reference.type +
+              "'><date>" + reference.date +
+              "</date><h3>" + reference.name + "</h3><p>" + reference.desc +
+              " <a href='" + reference.url + "' target='_blank'>☛" +
+              "</p></reference>" );
+          }
+          else {
+            $( "." + reference.year ).append(
+              "<era class='offset-" + reference.month +
+              " era-" + reference.era +
+              " odd-" + i % 2 + " " + reference.type +
+              "'><date>" + reference.date + " - " + reference.name +
+              "</date></era>" );
+          }
+        }
+        console.log("#####################################");
+      } else {
+        console.warn('No references found in spreadsheet.');
+      }
+
+    }
+  </script>
+
+</body>
+</html>
