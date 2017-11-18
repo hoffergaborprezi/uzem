@@ -1,0 +1,50 @@
+/* font families
+  font-family: 'Pathway Gothic One', sans-serif;
+*/
+
+@basecolor: black;
+@link: #3181FF;
+
+@prezicolor: #3181ff;
+@coandcocolor: red;
+@personalcolor: @basecolor;
+@teachingcolor: gray;
+@studiescolor: blue;
+
+@basepadding: 5px;
+
+@breakpoint1: 500px;
+@numberofyears: 35;
+@numberoffullyears: 15;
+
+.basefont {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: 400;
+  color: @basecolor;
+}
+
+.displayfont {
+  font-family: 'Pathway Gothic One', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+  color: @basecolor;
+}
+
+html {
+  padding: 0;
+}
+
+body {
+  .basefont;
+  font-size: @basepadding * 3;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: @link;
+  display: inline-block;
+  margin-top: -3px;
+}
