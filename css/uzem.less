@@ -48,3 +48,52 @@ a {
   display: inline-block;
   margin-top: -3px;
 }
+
+/* HEADER */
+
+header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  display: block;
+  padding-top: @basepadding * 4;
+  box-sizing: border-box;
+
+
+
+  h1 {
+    .displayfont;
+    font-size: 35px;
+    margin-bottom: 0px;
+    display: inline;
+
+    @media screen and (max-width: @breakpoint1) {
+      display: block;
+      font-size: 50px;
+    }
+  }
+
+  h2, h3 {
+    font-size: @basepadding * 3;
+    margin-left: @basepadding * 2;
+    display: inline-block;
+    font-weight: 400;
+    background-color: rgba(255,255,255,0.7);
+
+    @media screen and (max-width: @breakpoint1) {
+      margin-left: 0;
+      display: block;
+    }
+  }
+
+  h3 {
+    float: right;
+    margin-right: @basepadding * 4;
+
+    @media screen and (max-width: @breakpoint1) {
+      margin-right: 0;
+      float: none;
+    }
+  }
+  
+}
