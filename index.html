@@ -128,9 +128,9 @@
             }
             $( "." + reference.year ).append(
               "<reference data-depth='0." + reference.importance +
-              "' style='transform: scale(1." + reference.importance-1 +
-              ",1." + reference.importance-1 +
-              ");' class='offset-" + reference.month +
+              "' style='transform: scale(1." + reference.importance - 1 +
+              ", 1." + reference.importance -1 + ");"
+              "' class='offset-" + reference.month +
               " era-" + reference.era +
               " odd-" + i % 2 + " " + reference.type +
               "'><date>" + reference.date +
