@@ -157,8 +157,9 @@
             console.log("+ Creating lightbox for " + reference.name);
             $( ".lightboxes" ).append(
               "<lightbox id='" + reference.id +
-              "'><a onclick='document.getElementById(\"" + reference.id + "\").style.display=\"none\";'>" + reference.name +
-              "</a></lightbox>" );
+              "'<h2>" + reference.name + "</h2><p>" + reference.longtext +
+              "</p><a onclick='document.getElementById(\"" + reference.id +
+              "\").style.display=\"none\";'>close</a></lightbox>" );
           }
         }
         console.log("#####################################");
