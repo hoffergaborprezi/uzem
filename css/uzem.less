@@ -124,10 +124,10 @@ timeline {
         .yearloop(@counter) when (@counter > 0) {
           .yearloop((@counter - 1));
           &:nth-child(@{counter}) {
-            top: 100vh * (@counter - 1);
+            top: 100vh * (@counter - 1) - 50vh;
             left: 0;
             & when (@counter > @numberoffullyears + 1) {
-              top: 100vh * @numberoffullyears + 50vw * (@counter - @numberoffullyears);
+              top: 100vh * @numberoffullyears + 50vw * (@counter - @numberoffullyears) - 50vh;
               height: 50vh;
               width: 100vw;
               left: 0;
@@ -137,6 +137,11 @@ timeline {
               content: "@{actualyear}";
             }
           }
+        }
+
+        .2018 {
+          height: 50vh;
+          top: 0;
         }
 
         .yearloop(@numberofyears);
