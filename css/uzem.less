@@ -183,7 +183,6 @@ timeline {
             .monthloop((@counter - 1));
             &.offset-@{counter} {
               top: (100vh / 12) * (12 - @counter);
-              left: 0;
             }
           }
 
@@ -194,7 +193,7 @@ timeline {
             display: block;
             color: white;
             box-sizing: border-box;
-            font-size: 1.5vh;
+            font-size: 12px;
             padding-left: @basepadding * 4;
             padding-right: @basepadding * 4;
             padding-top: @basepadding / 2;
