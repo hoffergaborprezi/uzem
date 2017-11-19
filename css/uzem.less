@@ -141,11 +141,6 @@ timeline {
 
         .yearloop(@numberofyears);
 
-        &.2018 {
-          height: 50vh;
-          top: 0;
-        }
-
         &:after {
           .displayfont;
           display: block;
@@ -155,6 +150,11 @@ timeline {
           top: 1.8vw;
           left: 1.8vw;
           z-index: 15;
+        }
+
+        .2018 {
+          height: 50vh !important;
+          top: 0 !important;
         }
 
         /* REFERENCES */
@@ -259,6 +259,7 @@ lightbox {
   margin: 0;
   box-sizing: border-box;
   padding: @basepadding*4;
+	z-index: 999;
 
   &:target {
     display: block;
