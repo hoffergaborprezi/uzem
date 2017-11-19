@@ -38,11 +38,11 @@
 </head>
 <body>
 
-  <header id="parallaxTimeline">
-    <h1 data-depth="0.1">Gábor Hoffer</h1>
-    <h2 data-depth="0.2">product design lead @ <a href="http://prezi.com/" target="_blank">Prezi.com</a>
+  <header>
+    <h1>Gábor Hoffer</h1>
+    <h2>product design lead @ <a href="http://prezi.com/" target="_blank">Prezi.com</a>
       <br />designer — manager — teacher — flame</h2>
-    <h3 data-depth="0.3"><a href="https://www.linkedin.com/in/hoffergabor" target="_blank">LinkedIn</a> —
+    <h3><a href="https://www.linkedin.com/in/hoffergabor" target="_blank">LinkedIn</a> —
         <a href="https://medium.com/@hoffergabor" target="_blank">Medium</a> —
         <a href="https://twitter.com/@hoffergabor" target="_blank">Twitter</a> —
         <a href="mailto:hoffergabor@gmail.com" target="_blank">Email</a></h3>
@@ -127,7 +127,7 @@
               lightboxHTML = "";
             }
             $( "." + reference.year ).append(
-              "<reference class='offset-" + reference.month +
+              "<reference data-depth="0.1" class='offset-" + reference.month +
               " era-" + reference.era +
               " odd-" + i % 2 + " " + reference.type +
               "'><date>" + reference.date +
@@ -159,7 +159,7 @@
 
     }
 
-    var scene = document.getElementById('parallaxTimeline');
+    var scene = $( ".2018" );
     var parallaxInstance = new Parallax(scene);
 
   </script>
