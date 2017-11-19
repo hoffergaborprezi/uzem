@@ -160,7 +160,7 @@ timeline {
           position: absolute;
           box-sizing: border-box;
           width: 40vw;
-          left: 12vw;
+          margin-left: 12vw;
           border: 1px solid;
           background: white;
 
@@ -171,13 +171,13 @@ timeline {
 
           &.odd-1 {
             width: 40vw;
-            margin-left: 42vw;
+            margin-left: 74vw;
           }
 
           .monthloop(@counter) when (@counter > 0) {
             .monthloop((@counter - 1));
             &.offset-@{counter} {
-              top: (100vh / 12) * (12 - @counter);
+              margin-top: (100vh / 12) * (12 - @counter);
             }
           }
 
