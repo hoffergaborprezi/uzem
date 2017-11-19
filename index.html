@@ -87,9 +87,11 @@
     </div>
   </timeline>
 
-  <lightbox id="lightbox">
-    <a href="#_" class="lightbox" id="img1">This be lightbox</a>
-  </lightbox>
+  <lightboxes class="lightboxes">
+    <lightbox id="lightbox">
+      <a href="#_" class="lightbox" id="img1">This be lightbox</a>
+    </lightbox>
+  </lightboxes>
 
   <script type="text/javascript">
 
@@ -130,6 +132,14 @@
               " odd-" + i % 2 + " " + reference.type +
               "'><date>" + reference.date + " - " + reference.name +
               "</date></era>" );
+          }
+
+          if (reference.lightbox == "yes") {
+            console.log("Creating lightbox for " + reference.name);
+            $( "." + lightboxes ).append(
+              "<lightbox id='" + reference.name +
+              "'><a href='#'>" + reference.name +
+              "</a></lightbox>" );
           }
         }
         console.log("#####################################");
