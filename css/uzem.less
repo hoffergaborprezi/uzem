@@ -246,13 +246,12 @@ timeline {
 
 /* LIGHTBOX */
 
-#lightbox {
+lightbox {
   display: none;
+  background: red;
+  position: fixed;
 
-  p:target, p:target~#chrome {
+  &:target {
     display: block;
-    background: red;
-    position: fixed;
   }
-
 }
