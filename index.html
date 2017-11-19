@@ -123,6 +123,7 @@
               "'><date>" + reference.date +
               "</date><h3>" + reference.name + "</h3><p>" + reference.desc );
               if (reference.lightbox == "yes") {
+                console.log("There's a lightbox link here");
                 $( "." + reference.year ).append(
                 "<a href='" + reference.id + ">link</a>" );
               }
