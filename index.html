@@ -52,9 +52,9 @@
     <div data-depth="0" class="line"></div>
     <div class="yearmarkers">
       <year id="2018" class="2018" style="top: 0; height: 50vh;"></year>
-      <year class="2017"></year>
-      <year class="2016"></year>
-      <year class="2015"></year>
+      <year id="2017" class="2017"></year>
+      <year id="2016" class="2016"></year>
+      <year id="2015" class="2015"></year>
       <year class="2014"></year>
       <year class="2013"></year>
       <year class="2012"></year>
@@ -160,8 +160,11 @@
 
       var scene = document.getElementById('2018');
       var parallaxInstance = new Parallax(scene);
-
       var scene = document.getElementById('2017');
+      var parallaxInstance = new Parallax(scene);
+      var scene = document.getElementById('2016');
+      var parallaxInstance = new Parallax(scene);
+      var scene = document.getElementById('2015');
       var parallaxInstance = new Parallax(scene);
 
     }
