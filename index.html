@@ -51,7 +51,7 @@
   <timeline>
     <div data-depth="0" class="line"></div>
     <div class="yearmarkers">
-      <year class="2018" style="top: 0; height: 50vh;"></year>
+      <year id="2018" class="2018" style="top: 0; height: 50vh;"></year>
       <year class="2017"></year>
       <year class="2016"></year>
       <year class="2015"></year>
@@ -159,7 +159,7 @@
 
     }
 
-    var scene = document.getElementsByClassName("2018");
+    var scene = document.getElementById('2018');
     var parallaxInstance = new Parallax(scene);
 
   </script>
