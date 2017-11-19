@@ -126,6 +126,7 @@ timeline {
           &:nth-child(@{counter}) {
             top: 100vh * (@counter - 1) - 50vh;
             left: 0;
+            z-index: 100-@counter;
             & when (@counter > @numberoffullyears + 1) {
               top: 100vh * @numberoffullyears + 50vw * (@counter - @numberoffullyears) - 50vh;
               height: 50vh;
