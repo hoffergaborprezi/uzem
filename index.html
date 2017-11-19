@@ -32,6 +32,9 @@
   <!-- tabletop.js - https://github.com/jsoma/tabletop - loads data from Google Spreadsheets -->
   <script src="js/tabletop.js" type="text/javascript"></script>
 
+  <!-- parallax.js - http://matthew.wagerfield.com/parallax/ - creates a device-driven parallax effect -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
 </head>
 <body>
 
@@ -45,11 +48,11 @@
         <a href="mailto:hoffergabor@gmail.com" target="_blank">Email</a></h3>
   </header>
 
-  <timeline>
+  <timeline id="parallaxTimeline">
     <div class="line"></div>
     <div class="yearmarkers">
-      <year class="2018" style="top: 0; height: 50vh;"></year>
-      <year class="2017"></year>
+      <year data-depth="0.2" class="2018" style="top: 0; height: 50vh;"></year>
+      <year data-depth="0.4" class="2017"></year>
       <year class="2016"></year>
       <year class="2015"></year>
       <year class="2014"></year>
@@ -155,6 +158,9 @@
       }
 
     }
+
+    var scene = document.getElementById('parallaxTimeline');
+    var parallaxInstance = new Parallax(scene);
 
   </script>
 
