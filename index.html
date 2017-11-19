@@ -48,10 +48,10 @@
         <a href="mailto:hoffergabor@gmail.com" target="_blank">Email</a></h3>
   </header>
 
-  <timeline>
+  <timeline id="timeline">
     <div data-depth="0" class="line"></div>
     <div class="yearmarkers">
-      <year id="2018" class="2018" style="top: 0; height: 50vh;"></year>
+      <year class="2018" style="top: 0; height: 50vh;"></year>
       <year class="2017"></year>
       <year class="2016"></year>
       <year class="2015"></year>
@@ -127,7 +127,7 @@
               lightboxHTML = "";
             }
             $( "." + reference.year ).append(
-              "<reference data-depth='0.1' class='offset-" + reference.month +
+              "<reference class='reference' data-depth='0.1' class='offset-" + reference.month +
               " era-" + reference.era +
               " odd-" + i % 2 + " " + reference.type +
               "'><date>" + reference.date +
@@ -157,8 +157,12 @@
         console.warn('No references found in spreadsheet.');
       }
 
-      var scene = document.getElementById('2018');
-      var parallaxInstance = new Parallax(scene);
+      var scene = document.getElementById('timeline');
+      var parallaxInstance = new Parallax(scene, {
+        relativeInput: true,
+        hoverOnly: true,
+        selector: '.reference'
+      });
 
     }
 
