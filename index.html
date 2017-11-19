@@ -116,18 +116,20 @@
           var reference = data[i];
           console.log(reference.name + " - loaded from - " + reference.year);
           if (reference.era == "") {
+            if (reference.lightbox == "yes") {
+              console.log("There's a lightbox link here");
+              lightboxHTML = "<a href='" + reference.id + "'>link</a>" );
+            }
+            else {
+              lightboxHTML = ""
+            }
             $( "." + reference.year ).append(
               "<reference class='offset-" + reference.month +
               " era-" + reference.era +
               " odd-" + i % 2 + " " + reference.type +
               "'><date>" + reference.date +
-              "</date><h3>" + reference.name + "</h3><p>" + reference.desc );
-              if (reference.lightbox == "yes") {
-                console.log("There's a lightbox link here");
-                $( "." + reference.year ).append(
-                "<a href='" + reference.id + "'>link</a>" );
-              }
-            $( "." + reference.year ).append("</p></reference>" );
+              "</date><h3>" + reference.name + "</h3><p>" + reference.desc + lightboxHTML +
+              "</p></reference>" );
           }
           else {
             $( "." + reference.year ).append(
