@@ -152,11 +152,6 @@ timeline {
           z-index: 15;
         }
 
-        .2018 {
-          height: 50vh !important;
-          top: 0 !important;
-        }
-
         /* REFERENCES */
 
         reference {
@@ -165,6 +160,7 @@ timeline {
           box-sizing: border-box;
           width: 40vw;
           left: 12vw;
+          border: 1px solid;
 
           /* WHERE TO PUT THEM */
 
@@ -172,8 +168,8 @@ timeline {
           }
 
           &.odd-1 {
-            width: 82vw;
-            padding-left: 42vw;
+            width: 40vw;
+            margin-left: 42vw;
           }
 
           .monthloop(@counter) when (@counter > 0) {
@@ -198,30 +194,35 @@ timeline {
           }
 
           &.prezi {
+            border-color: @prezicolor;
             date {
               background: @prezicolor;
             }
           }
 
           &.personal {
+            border-color: @personalcolor;
             date {
               background: @personalcolor;
             }
           }
 
           &.coandco {
+            border-color: @coandcocolor;
             date {
               background: @coandcocolor;
             }
           }
 
           &.studies {
+            border-color: @studiescolor;
             date {
               background: @studiescolor;
             }
           }
 
           &.teaching {
+            border-color: @teachingcolor;
             date {
               background: @teachingcolor;
             }
@@ -264,4 +265,11 @@ lightbox {
   &:target {
     display: block;
   }
+}
+
+/* YEAR FIX */
+
+year.2018 {
+  height: 50vh !important;
+  top: 0 !important;
 }
