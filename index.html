@@ -145,7 +145,7 @@
             console.log("+ Creating lightbox for " + reference.name);
             $( ".lightboxes" ).append(
               "<lightbox id='" + reference.id +
-              "'><a href='#'>" + reference.name +
+              "'><a onclick='document.getElementById('" + reference.id + "').style.display = 'none';'>" + reference.name +
               "</a></lightbox>" );
           }
         }
