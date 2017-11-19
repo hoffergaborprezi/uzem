@@ -123,7 +123,11 @@
           if (reference.era == "") {
             if (reference.lightbox == "yes") {
               console.log("There's a lightbox link here");
-              lightboxHTML = " <a href='#" + reference.id + "'>read more →</a>";
+              lightboxHTML = " <a href='#" + reference.id + "'>Read more →</a>";
+            }
+            else if (reference.url != "") {
+              console.log("There's a url link here");
+              lightboxHTML = " <a href='" + reference.url + "'>Read more →</a>";
             }
             else {
               lightboxHTML = "";
