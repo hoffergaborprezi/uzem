@@ -127,7 +127,8 @@
               lightboxHTML = "";
             }
             $( "." + reference.year ).append(
-              "<reference data-depth='0.1' class='offset-" + reference.month +
+              "<reference data-depth='0." + reference.importance +
+              "' class='offset-" + reference.month +
               " era-" + reference.era +
               " odd-" + i % 2 + " " + reference.type +
               "'><date>" + reference.date +
