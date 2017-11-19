@@ -158,7 +158,26 @@ timeline {
           display: block;
           position: absolute;
           box-sizing: border-box;
-          width: 49.5vw;
+          width: 44.5vw;
+          margin-left: 5vw;
+
+          /* WHERE TO PUT THEM */
+
+          &.odd-0 {
+            date {
+              text-align: right;
+            }
+          }
+
+          &.odd-1 {
+            display: table;
+            left: 50.5vw;
+            margin-left: 0;
+
+            date {
+              text-align: left;
+            }
+          }
 
           .monthloop(@counter) when (@counter > 0) {
             .monthloop((@counter - 1));
@@ -226,24 +245,6 @@ timeline {
             font-size: 2vh;
             padding-left: @basepadding * 4;
             padding-right: @basepadding * 2;
-          }
-
-          /* WHERE TO PUT THEM */
-
-          &.odd-0 {
-            date {
-              text-align: right;
-              top: 50vh;
-            }
-          }
-
-          &.odd-1 {
-            display: table;
-            left: 50.5vw;
-
-            date {
-              text-align: left;
-            }
           }
 
         }
