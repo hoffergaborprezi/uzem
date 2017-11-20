@@ -179,8 +179,9 @@ timeline {
           box-sizing: border-box;
           width: 40vw;
           margin-left: 12vw;
-          border: 1px solid;
           background: white;
+          box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+          border-radius: 3px;
 
           /* WHERE TO PUT THEM */
 
@@ -218,35 +219,30 @@ timeline {
           }
 
           &.prezi {
-            border-color: @prezicolor;
             date {
               background: @prezicolor;
             }
           }
 
           &.personal {
-            border-color: @personalcolor;
             date {
               background: @personalcolor;
             }
           }
 
           &.coandco {
-            border-color: @coandcocolor;
             date {
               background: @coandcocolor;
             }
           }
 
           &.studies {
-            border-color: @studiescolor;
             date {
               background: @studiescolor;
             }
           }
 
           &.teaching {
-            border-color: @teachingcolor;
             date {
               background: @teachingcolor;
             }
